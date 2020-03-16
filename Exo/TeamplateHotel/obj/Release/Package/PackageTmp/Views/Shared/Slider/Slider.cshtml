@@ -1,0 +1,29 @@
+﻿@using ProjectLibrary.Database
+@using TeamplateHotel.Controllers
+@{
+    Menu menu = ViewBag.Menu ?? new Menu();
+    List<Slider> sliders = CommentController.GetListSlider(Request.Cookies["LanguageID"].Value);
+}
+
+<link href="~/Areas/Administrator/Content/Slider/theme/default.css" rel="stylesheet" />
+<link href="~/Areas/Administrator/Content/Slider/nivo-slider.css" rel="stylesheet" />
+
+@if (sliders.Count > 0)
+{
+    <section class="hero hero-overlap" style="background-image: url(@sliders[0].Image);">
+        <div class="bg-overlay">
+            <div class="container">
+                <div class="intro-wrap">
+                    <h1 class="intro-title">@sliders[0].Title </h1>
+                    <div class="intro-text" style="font-weight: 600"> @sliders[0].Description</div>
+                    <form class="form-inline" action="/Search" method="get">
+                        <div class="form-group">
+                            <input type="text" id="keysearch" name="key" class="form-control" placeholder="I want to travel to...">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+}

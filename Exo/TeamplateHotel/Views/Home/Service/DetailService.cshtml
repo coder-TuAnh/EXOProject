@@ -1,0 +1,27 @@
+﻿<p>Test</p>
+<div class="hotelListFilterInDesktop">
+    <ul>
+        <li class="head-title hidden-xs hidden-sm"><b>Sắp xếp theo:</b></li>
+        <li class="active">
+            <a href="/khach-san.htm">
+                <span class="hidden-xs hidden-sm">Phổ biến</span>
+                <span class="visible-xs visible-sm">Phổ biến</span>
+                <i class="glyphicon glyphicon-chevron-up"></i>
+            </a>
+        </li>
+        <li class="nonActive prices-li">
+            <a href="javascript:void(0)" id="link_prices">
+                <span class="hidden-xs hidden-sm">Giá phòng</span>
+                <span class="visible-xs visible-sm"><b class="glyphicon glyphicon-usd color-orange" style="position: relative; top:2px;"></b> Giá</span>
+                <i id="icon_prices" class="icon_prices"></i>
+            </a>
+            <ul class="prices-menu">
+                <li>  <a href="javascript:void(0)" id="buttonSearch" onclick="App.OrderBy(1,'prices')">Search for words</a></li>
+                <li><a href="javascript:void(0)" onclick="App.OrderBy(2,'prices')">Từ cao đến thấp</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="~/Content/js/dev.js"></script>

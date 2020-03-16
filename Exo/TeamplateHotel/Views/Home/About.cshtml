@@ -1,0 +1,86 @@
+﻿@using ProjectLibrary.Database
+@using TeamplateHotel.Controllers
+@using TeamplateHotel.Handler
+@{
+    string lan = Request.Cookies["LanguageID"].Value;
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    var hotel = CommentController.DetailHotel(lan);
+    Menu menu = ViewBag.Menu ?? new Menu();
+    List<AboutUs> aboutUs = CommentController.GetAboutUs(lan);
+    List<Employee> _employees = CommentController.GetEmployee(lan);
+}
+@section css{
+    <link rel="stylesheet" type="text/css" href="~/Content/css/tour.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/responsive/tour_res.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/about-us.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/responsive/about-us.css">
+}
+<style>
+    .margin_auto img {
+        width: 50px
+    }
+</style>
+<section class="banner_main">
+    <img src="~/Content/img/img_lo/banner-1.jpg">
+    <div class="title_banner_main">
+        <h1>@menu.Title</h1>
+        <p>Luxury Travel - The Leading High-end DMC in Southeast Asia</p>
+    </div>
+</section>
+<section class="choose_us">
+    <div class="container">
+        <h2 class="text-center">Why to choose us?</h2>
+        <div class="row">
+
+            @foreach (var item in aboutUs)
+            {
+                <div class="col-lg-4">
+                    <div class="wrap_item">
+                        <img src="@item.Image" alt="@item.Title">
+                        <div class="text-item">
+                            <div class="wrap_item">
+                                <h3>@item.Title</h3>
+                                <p class="text-why">
+                                    @Html.Raw(item.Description)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
+<section class="meetOurTeam">
+    <div class="container">
+        <div class="title_meeet">
+            <h2 class="text-center">Meet Our Team</h2>
+            <p>
+                All of our travel consultants follow a specially devised training program to develop their expertise in all aspects of travel and customer service. We personally check the hotels, resorts, and restaurants, and listen carefully to our client’s requirements in order to deliver the right itineraries and experiences. <br>
+                We are committed to operating with the highest standards of service and professionalism while continuing to improve on the qualities that make us not just good, but great.
+            </p>
+        </div>
+        <div class="row">
+            @foreach (var item in _employees)
+            {
+                <div class="col-lg-6">
+                    <div class="wrapper">
+                        <div class="img_auther">
+                            <img src="@item.Image" alt="@item.FullName">
+                        </div>
+                        <div class="text_tieusu">
+                            <h3>@item.FullName</h3>
+                            <span class="position">@item.Position</span>
+                            <p>@Html.Raw(item.Description)</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</section>
+<section class="banner_us">
+    @Html.Partial("Banner_us")
+</section>  

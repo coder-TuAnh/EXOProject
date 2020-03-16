@@ -1,0 +1,410 @@
+﻿@using ProjectLibrary.Database
+@using ProjectLibrary.Utility
+@using TeamplateHotel.Controllers
+@using TeamplateHotel.Handler
+@using TeamplateHotel.Models
+@model TeamplateHotel.Models.DetailTour
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    Menu menu = ViewBag.Menu ?? new Menu();
+    Hotel company = CommentController.DetailHotel(Request.Cookies["LanguageID"].Value);
+    List<ShowObject> tourRelates = ViewBag.ListTour ?? new List<ShowObject>();
+    string lan = Request.Cookies["LanguageID"].Value;
+    List<ShowObject> _tourLike = CommentController.TourLike(lan);
+    List<Menu> menuActi = CommentController.GetMenusActivities(lan);
+    int i = 0;
+    int index = 0;
+}
+<section class="full-screen bg-tour">
+    <div class="video-main ">
+        <img src="~/Content/images/bg-tour-detail.jpg" alt="">
+        <div class="title-content-tourDetail">
+            <h1 data-effect="fadeInLeft" class="hs-line-1 animate-e nopadding">@Model.Tour.Title</h1>
+            @*<h4 class="white">8 Days / 7 Nights</h4>*@
+            <div class="mg-top-15" style="color: white;">
+                <img alt="Active Travel " title="Active Travel " class="style-icons" src="~/Content/images/icon-menu/active-travel.png"> -
+                <img alt="Classic Journeys" title="Classic Journeys" class="style-icons" src="~/Content/images/icon-menu/classic-journeys.png"> -
+                <img alt="Undiscovered Asia " title="Undiscovered Asia " class="style-icons" src="~/Content/images/icon-menu/undiscovered-asia.png"> -
+            </div>
+        </div>
+    </div>
+</section>
+<section class="des-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    <img src="~/Content/images/icon-menu/icon-overview.png" alt="" class="icon-overview">
+                </p>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2 class="hightlight-underline">OVERVIEW</h2>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="black-noline">
+                    Bagan<span class="green"> / </span>
+                    Heho<span class="green"> / </span>
+                    Inle Lake<span class="green"> / </span>Mandalay<span class="green"> / </span>
+                    Yangon
+                </div>
+            </div>
+            <div class="col md-12">
+                <div id="fancybox-content">
+                    <div class="row">
+                        @foreach (var item in Model.TourGalleries.Take(3))
+                        {
+                            <div class="col-md-4 col-sm-4">
+                                <a class="fancybox" href="@item.LargeImage" data-fancybox-group="gallery" title="">
+                                    <img src="@item.LargeImage" alt="" />
+                                    <span class="rollover"></span>
+                                </a>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+            <blockquote class="mg-top-40">
+                @Html.Raw(Model.Tour.Description)
+            </blockquote>
+            <div class="col-md-12 fav-section text-center mg-top-40 mg-bt-40">
+                <ul>
+                    <li><a href="#"><i class="fas fa-share-alt icon-share"></i>Share</a></li>
+                    <li><a href="#"><i class="fas fa-print icon-share"></i>Print</i></a></li>
+                    <li><a href="#"><i class="far fa-sticky-note icon-share"></i>Enquire</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-darks pd-bottom-40">
+    <div class="container">
+        <div class="row align-center">
+            <div class="col-md-12 text-center">
+                <p>
+                    <img src="~/Content/images/icon-menu/icon-trip-highlights.png" alt="" class="icon-svg">
+                </p>
+                <h2 class="hightlight-underline mg-bt-40">TRIP HIGHLIGHTS</h2>
+            </div>
+            <div class="col-md-6">
+                <div class="highlight-picture">
+                    <img alt="" title="" src="~/Content/images/detail-tour-img.jpg">
+                </div>
+            </div>
+
+            <div class="col-md-6 highlight-section-r">
+                <div class="mb-20">
+                    <i><img alt="" title="" src="~/Content/images/icon-menu/icon-highlight.png"></i>
+                    <h4>See Myanmar’s ‘Big Four’</h4>
+                    <p>Visit Mandalay, Yangon, Bagan and Inle Lake, the four main tourist destinations for an introduction to Myanmar.</p>
+                </div>
+                <div class="mb-20">
+                    <i><img alt="" src="~/Content/images/icon-menu/icon-highlight.png"></i>
+                    <h4>Delve into Myanmar’s spirituality</h4>
+                    <p>Meet with monks and pilgrims at sacred shrines to learn about the country’s Buddhist culture.</p>
+                </div>
+                <div class="mb-20">
+                    <i><img alt="" title="" src="~/Content/images/icon-menu/icon-highlight.png"></i>
+                    <h4>Explore historic vestiges</h4>
+                    <p>Wander through time, visiting 11th century temples, former capitals of royal kingdoms and fading British colonial buildings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="des-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mg-top-40">
+                <p>
+                    <img src="~/Content/images/icon-menu/icon-itinerary.png" alt="" class="icon-overview">
+                </p>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2 class="hightlight-underline">ITINERARY</h2>
+            </div>
+            <div class="col-md-12 text-center">
+                <blockquote>
+                    <p>Essential Myanmar - 8 Days / 7 Nights</p>
+                </blockquote>
+            </div>
+            <div class="col-md-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32344111.848402362!2d98.14384585425101!3d8.277315802283354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3233af605e720cd5%3A0x28a70f18542d1b91!2sSouth%20East%20Asia!5e0!3m2!1sen!2s!4v1573615244373!5m2!1sen!2s" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="col-md-12 mg-top-40">
+                <div class="row">
+                    <div class="col-md-12 ftco-animate">
+                        <div id="accordion">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card-headers">
+                                        <a class="card-link" data-toggle="collapse" href=".menu" aria-expanded="false">
+                                            ALL
+                                            <span class="collapsed"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span>
+                                            <span class="expanded"><img src="~/Content/images/icon-menu/icon-arrow-up.png" alt=""></span>
+                                        </a>
+                                    </div>
+                                    @foreach (var item in Model.TabTours)
+                                    {
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <a class="card-link" data-toggle="collapse" href="#menu2" aria-expanded="false" aria-controls="menu4">@item.TitleTab <span class="collapsed"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span><span class="expanded"><img src="~/Content/images/icon-menu/icon-arrow-up.png" alt=""></span></a>
+                                            </div>
+                                            <div id="menu2" class="collapse menu">
+                                                <div class="card-body">
+                                                    @Html.Raw(item.Content)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="card-link" data-toggle="collapse" href="#menu4" aria-expanded="false" aria-controls="menu4">DAY 4 - BAGAN - MANDALAY<span class="collapsed"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span><span class="expanded"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span></a>
+                                        </div>
+                                        <div id="menu4" class="collapse menu">
+                                            <div class="card-body">
+                                                <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="card-link" data-toggle="collapse" href="#menu5" aria-expanded="false" aria-controls="menu5">DAY 5 - MANDALAY – AMARAPURA – AVA – SAGAING - MANDALAY<span class="collapsed"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span><span class="expanded"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span></a>
+                                        </div>
+                                        <div id="menu5" class="collapse menu">
+                                            <div class="card-body">
+                                                <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="card-link" data-toggle="collapse" href="#menu6" aria-expanded="false" aria-controls="menu6">DAY 6 - MANDALAY – HEHO – INLE LAKE<span class="collapsed"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span><span class="expanded"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span></a>
+                                        </div>
+                                        <div id="menu6" class="collapse menu">
+                                            <div class="card-body">
+                                                <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 fav-section text-center mg-top-40 mg-bt-40">
+                <ul>
+                    <li><a href="#"><i class="fas fa-share-alt icon-share"></i>Share</a></li>
+                    <li><a href="#"><i class="fas fa-print icon-share"></i>Print</i></a></li>
+                    <li><a href="#"><i class="far fa-sticky-note icon-share"></i>Enquire</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="des-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mg-top-40">
+                <p>
+                    <img src="~/Content/images/icon-menu/icon-search-catalogue.png" alt="" class="icon-overview">
+                </p>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2 class="hightlight-underline">IMPORTANT INFORMATION</h2>
+            </div>
+        </div>
+        <div class="row tab pd-bottom-40 tab-tour-detail">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs mg-bt-40">
+                    <li class="active"><a data-toggle="tab" href="#home" class="active">Services</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Notes</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active show">
+                        <div class="row">
+                            <div class="col-md-12 exo-table">
+                                <p><strong>Our services include:</strong></p>
+                                <ul>
+                                    <li>Accommodation in a shared twin or shared double room with daily breakfast</li>
+                                    <li>Meals as mentioned in itinerary (B = breakfast, L = Lunch, D = Dinner)</li>
+                                    <li>English-speaking station guides (different station guide in each destination)</li>
+                                    <li>Porter fees at airports</li>
+                                    <li>All transfers and excursions with private air-conditioned vehicles</li>
+                                    <li>Private motorized boat in Inle Lake and sunset cruise in Bagan</li>
+                                    <li>Horse cart tours in Bagan &amp; Ava</li>
+                                    <li>Entrance fees for the visits as mentioned in the program (Shwedagon Entrance Fee, Bagan Zone Fee, Mandalay Zone Fee, Sagaing Zone Fee, Inle Zone Fee)</li>
+                                    <li>Drinking water while touring</li>
+                                </ul>
+                                <p><strong>Our services do not include:</strong></p>
+                                <ul>
+                                    <li>International ticket to/from Yangon</li>
+                                    <li>Domestic flights (Please refer to the supplement table below)</li>
+                                    <li>Meals other than mentioned (B = breakfast, L = Lunch, D = Dinner)</li>
+                                    <li>Visa arrangements for Myanmar</li>
+                                    <li>Visits not mentioned in the program</li>
+                                    <li>Drinks and personal expenses</li>
+                                    <li>Tips and porters at the hotels</li>
+                                    <li>Credit card fees (2-3%) or bank transfer fees for non-cash payments</li>
+                                    <li>Any other items not mentioned</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md-12 exo-table">
+                                <p><strong>Creating Unique Touring Experiences</strong></p>
+                                <p>All the touring itineraries on this website have been carefully crafted by our in-country management teams and represent a series of experiences we can certainly recommend. However, we understand that every travel experience should be as unique and individual as each traveler. Our consultants are waiting to hear from you so that we can tailor or custom design a Myanmar Tour to your individual specifications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-darks pd-bottom-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    <img src="~/Content/images/icon-menu/icon-tour.png" alt="" class="icon-svg">
+                </p>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2 class="hightlight-underline">SIMILAR TOURS YOU MAY LIKE</h2>
+                <blockquote class="about-quote">
+                    <p>Not quite right or still need some more inspiration? Take a look at the journeys below and discover what other people who liked this tour also looked at!</p>
+                </blockquote>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="row mg-bot-20">
+                    @foreach (var item in _tourLike)
+                    {
+                        <div class="col-md-4 mg-bot-20">
+                            <div class="thumbnail tout-detal-thb">
+                                <a href="tour-detail.html"><img src="@item.Image" alt=""></a>
+                                <div class="desc_top">
+                                    <h3>@item.Title</h3>
+                                    <span>Japan</span>
+                                    <p><img src="~/Content/images/flags/icon-japan.png" alt=""></p>
+                                </div>
+                                <div class="desc_2">
+                                    <h3> @*@item.TimeDeal*@</h3>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    <div class="col-md-12">
+                        <div id="addboxes-tours" class="mg-top-40 clearfix">
+                            <a href="#" class="btn-view-more">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="des-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mg-top-40">
+                <p>
+                    <img src="~/Content/images/icon-menu/icon-getIntouch.png" alt="" class="icon-overview">
+                </p>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2 class="hightlight-underline">GET IN TOUCH</h2>
+            </div>
+            <blockquote class="mg-top-40">
+                <p>We love to talk travel. If you have any questions, please don't hesitate to get in touch. We're here to help!</p>
+            </blockquote>
+            <div class="col-md-12 fav-section text-center mg-top-40 mg-bt-40">
+                <ul>
+                    <li><a href="#"><i class="far fa-sticky-note icon-share"></i>Enquire</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-darks">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    <img src="~/Content/images/icon-all-social.svg" alt="" class="icon-svg">
+                </p>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2 class="hightlight-underline">our asia</h2>
+                <blockquote class="about-quote">
+                    <p>For inspiring experiences, real-time updates, the latest trends or casual conversation, explore our social networks for all things travel.</p>
+                </blockquote>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="social-links mg-bt-40">
+                    <a target="_blank" title="Facebook" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" title="Twitter" href=""><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" title="Linkedin" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a target="_blank" title="Googleplus" href=""><i class="fab fa-google-plus-g"></i></a>
+                    <a target="_blank" title="Pinterest" href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a target="_blank" title="Youtube" href=""><i class="fab fa-youtube"></i></a>
+                    <a target="_blank" title="Instagram" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="brand">
+    <div class="container">
+        <div class="row">
+            <div class="large-12 columns col-md-12">
+                <div class="destination-slider owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/1.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/2.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/3.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/4.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/5.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

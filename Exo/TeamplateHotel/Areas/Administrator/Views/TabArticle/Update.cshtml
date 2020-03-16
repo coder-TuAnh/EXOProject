@@ -1,0 +1,75 @@
+﻿@model TeamplateHotel.Areas.Administrator.EntityModel.ETapArticle
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Areas/Administrator/Views/Templates/_LayoutPage.cshtml";
+}
+
+<div class="span12">
+    <div class="widget ">
+        <div class="widget-header">
+            <i class=" icon-plus-sign"></i>
+            <h3>@ViewBag.Title</h3>
+        </div> <!-- /widget-header -->
+
+        <div class="widget-content">
+            @Html.ValidationSummary(true)
+            @using (Html.BeginForm("Update", "TabArticle", FormMethod.Post, new { @class = "form-horizontal" }))
+            {
+                @Html.HiddenFor(a => a.ID)
+
+                <div class="control-group">
+                    <label class="control-label" for="Title">Title<span class="asterisk">*</span></label>
+                    <div class="controls">
+                        @Html.TextBoxFor(c => c.Title, new { @class = "span4" })
+                        @Html.ValidationMessageFor(c => c.Title)
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    @Html.LabelFor(c => c.Alias, new { @class = "control-label" })
+                    <div class="controls">
+                        @Html.TextBoxFor(c => c.Alias, new { @class = "span4" })
+                        @Html.ValidationMessageFor(c => c.Alias)
+                    </div>
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div class="form-actions">
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                    <a href="@Url.Action("Index", "TabArticle")" class="btn">Cancel</a>
+                </div>
+
+                <div class="control-seo">
+                    <h3 class="mg-h">Search engine optimization(Seo)</h3>
+                    <div class="control-group">
+                        @Html.LabelFor(c => c.MetaTitle)
+                        @Html.TextBoxFor(c => c.MetaTitle, new { @class = "span4" })
+                        @Html.ValidationMessageFor(p => p.MetaTitle)
+                    </div>
+
+                    <div class="control-group">
+                        @Html.LabelFor(c => c.MetaDescription)
+                        <div class="jtable-input jtable-text-input">
+                            @Html.TextAreaFor(c => c.MetaDescription, new { @class = "span4 meta-seo" })
+                            @Html.ValidationMessageFor(p => p.MetaDescription)
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        bindUl();
+        AutoAlias("Title", "Alias");
+        CreateCkEditor();
+    });
+
+</script>

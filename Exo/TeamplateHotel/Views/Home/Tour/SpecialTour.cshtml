@@ -1,0 +1,93 @@
+﻿@using ProjectLibrary.Database
+@using TeamplateHotel.Handler
+@using TeamplateHotel.Controllers
+@using TeamplateHotel.Models
+@using PagedList.Mvc
+@using PagedList
+@model PagedList.IPagedList<TeamplateHotel.Models.ShowObject>
+@{
+    Menu menu = ViewBag.Menu ?? new Menu();
+}
+<div class="row clearfix">
+    @foreach (var item in Model)
+    {
+        <div class="item-tour gray">
+            <div class="label-img"><img src="~/Content/images/icon-menu/exo-promo-corner.png"></div>
+            <a id="entry-2664" href="tour-detail.html" class="product-link" title=""></a>
+            <div class="wrap-tour line" id="test">
+                <img src="@item.Image" alt="">
+                <div class="btn-compare">
+                    <i class="fas fa-plus"></i>
+                </div>
+                <h4 class="text-center">
+                    <span class="country-name-list-hide">@item.Title</span>
+                    <span class="item-flag item-flag-grid">
+                        <i class="media-box-icon-country icon-flag-japan"></i>
+                    </span>
+                </h4>
+            </div>
+            <div class="item-content-h-1 line">
+                <div class="caption-h4">
+                    <p>@item.Title</p>
+                </div>
+            </div>
+            <div class="item-content col-md-12 line">
+                <ul class="details-tour">
+                    @Html.Raw(item.Description)
+                    @*<li>Get an introduction to Tokyo</li>*@
+                    @*<li>Sip sake in Takayama</li>
+                        <li>Explore Hiroshima’s highlights</li>
+                        <li>Experience tea culture in Kyoto</li>
+                        <li>See Osaka’s mix of old and new </li>*@
+                </ul>
+            </div>
+            <div class="item-content line">
+                <div class="view-share clearfix">
+                    <ul>
+                        <li><a href="/@menu.Alias/@item.ID/@item.Alias">View Tour</a></li>
+                        <li class="bt-share">
+                            <div class="box-share">
+                                <ul>
+                                    <li class="email"><a href="#"><i class="far fa-envelope icon-link-share"></i></a></li>
+                                    <li class="reddit"><a href="#"><i class="fab fa-reddit-alien icon-link-share"></i></a></li>
+                                    <li class="messenger"><a href="#"><i class="fab fa-facebook-messenger icon-link-share"></i></a></li>
+                                    <li class="facebook"><a href="#"><i class="icon-link-share fab fa-facebook-f"></i></a></li>
+                                    <li class="twitter"><a href="#"><i class="icon-link-share fab fa-twitter"></i></a></li>
+                                    <li class="linkedin"><a href="#"><i class="icon-link-share fab fa-linkedin-in"></i></a></li>
+                                    <li class="googleplus"><a href="#"><i class="icon-link-share fab fa-google-plus-g"></i></a></li>
+                                    <li class="pinterest"><a href="#"><i class="icon-link-share fab fa-pinterest"></i></a></li>
+                                    <li class="whatsapp"><a href="#"><i class="icon-link-share fab fa-whatsapp-square"></i></a></li>
+                                </ul>
+                            </div>
+                            <a href="#">Share<i class="fas fa-share-alt"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+<div class="row mg-top-40">
+    <div class="col-md-12">
+        <div class="row wrap-result-view">
+            <div class="col-md-6 text-left search-result-view">
+                <span id="tot-records-bottom">@Model.Count()</span> TOURS FOUND
+            </div>
+            <div class="col-md-6 text-right" id="pagination">
+                <nav>
+                    <ul class="pagination">
+                        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function OrderBy(id) {
+        var slug = $("#slugguugug").val();
+        $("#showdatahotelt").load("/demo", { slug: slug, item: id });
+    }
+</script>

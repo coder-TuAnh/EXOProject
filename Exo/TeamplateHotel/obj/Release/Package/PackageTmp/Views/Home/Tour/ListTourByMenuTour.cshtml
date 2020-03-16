@@ -1,0 +1,100 @@
+﻿@using ProjectLibrary.Database
+@using TeamplateTour.Controllers
+@model TeamplateTour.Models.PagingOject
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    Menu menu = ViewBag.Menu ?? new Menu();
+    Company company = CommentController.DetailCompany();
+}
+<div class="sub-nav">
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <h1 class="h1-title-d">
+                    @menu.TitleMenu
+                </h1>
+            </div>
+            <!-- Sub Nav Links -->
+            <nav class="navbar-collapse collapse" id="navbar-sub">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://swallowtravel.com/@menu.AliasMenu"><i class="fa fa-facebook"></i><span class="hidden-md hidden-lg">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://twitter.com/share?url=http://swallowtravel.com/@menu.AliasMenu"><i class="fa fa-twitter"></i><span class="hidden-md hidden-lg">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://plus.google.com/share?url=http://swallowtravel.com/@menu.AliasMenu"><i class="fa fa-google-plus"></i><span class="hidden-md hidden-lg">Google +</span></a>
+                    </li>
+                    <li><a target="_blank" href="mailto:@company.Email"><i class="fa fa-envelope-o"></i> <span class="hidden-md hidden-lg">Email</span></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+<section class="regular" style="padding-top: 4rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                @foreach (var item in Model.ListObject)
+                {
+                    <div class="item-content">
+                        <div class="col-md-3">
+                            <a href="/@item.MenuAlias/@item.Id/@item.Alias" title="@item.Name">
+                                <img src="@item.Image" alt="@item.Name" style="width: 100%;" class="img-border" />
+                            </a>
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="title-content"><a href="/@item.MenuAlias/@item.Id/@item.Alias" title="@item.Name">@item.Name</a></h3>
+                            <div style="text-align: justify">
+                                @Html.Raw(item.Description)
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p class="from"><i>from</i></p>
+                            <p class="div_price"><strong>$@(item.Price)</strong></p>
+                            <div class="div-book btn btn-primary"><a href="/@item.MenuAlias/@item.Id/@item.Alias" title="Book">See more</a></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-3">
+                @Html.Partial("SideBar")
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        @if (Model.TotalPage > 1)
+        {
+            <div class="row paging">
+                <div class="col-xs-12">
+                    <ul class="pagination">
+                        @if (Model.Page != 1)
+                        {
+                            <li class="disabled"><a href="/@menu.AliasMenu?page=@(Model.Page - 1)">«</a></li>
+                        }
+                        @for (int i = 1; i <= Model.TotalPage; i++)
+                        {
+                            string current = "";
+                            if (i == Model.Page)
+                            {
+                                <li class="active"><a href="javascript:void(0)">@i</a></li>
+                            }
+                            else
+                            {
+                                <li><a href="/@menu.AliasMenu?page=@i">@i</a></li>
+                            }
+                        }
+                        @if (Model.TotalPage != Model.Page)
+                        {
+                            <li><a href="/@menu.AliasMenu?page=@(Model.Page + 1)">»</a></li>
+                        }
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+</section>

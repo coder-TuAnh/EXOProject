@@ -1,0 +1,445 @@
+﻿@using ProjectLibrary.Utility
+@using TeamplateHotel.Handler
+@using TeamplateHotel.Controllers
+@model TeamplateHotel.Models.DetailTour
+@{
+
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    string lan = Request.Cookies["LanguageID"].Value;
+    decimal second = CommentController.GetTimeSale(Model.Tour.StartDeal, Model.Tour.TimeDeal);
+    double save = 100 - Math.Round((((double)Model.Tour.PriceSale / (double)Model.Tour.Price) * 100), 0);
+
+}
+<!--- css tabtour --->
+<link href="~/Plugins/Flipclock/flipclock_old.css" rel="stylesheet" />
+<link href="~/Plugins/TabTour/Css/zozo.tabs.min.css" rel="stylesheet" />
+<link href="~/Plugins/TabTour/Css/zozo.examples.min.css" rel="stylesheet" />
+
+<link href="~/Plugins/Slider/flexSlider/flexslider.css" rel="stylesheet" />
+<script src="~/Plugins/Slider/flexSlider/jquery.flexslider-min.js"></script>
+<!-- jquery tabtour -->
+<script src="~/Plugins/Flipclock/flipclock.min.js"></script>
+<script src="~/Plugins/TabTour/Js/zozo.tabs.min.js"></script>
+
+<div id="w-body">
+    <h1 class="tieude-detail">@Model.Tour.Title</h1>
+    <div class="f-width w-deal" style="margin-bottom: 32px;">
+        <div class="l-deal">
+            <div id="flexslider-deal-slider" class="flexslider">
+                <ul class="slides">
+                    @foreach (var item in Model.TourGalleries)
+                    {
+                        <li><img src="@item.LargeImage" alt="@item.ID" width="678" /></li>
+                    }
+                </ul>
+            </div>
+            <div id="flexslider-deal-carousel" class="flexslider">
+                <ul class="slides">
+                    @foreach (var item in Model.TourGalleries)
+                    {
+                        <li><img src="@item.SmallImage" alt="@item.ID" /></li>
+                    }
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="r-deal">
+            <h2 class="title-h2" style="text-align: center">Last minute deal</h2>
+            <div id="time-countdown">
+                <div class="clock" style="margin: 2em;"></div>
+            </div>
+            <div id="w-price-deal">
+                <h2 id="price-deal">$@Model.Tour.PriceSale</h2>
+                <h3 class="h3-deal">@*was $@Model.Tour.Price save @(100 - Math.Round((Model.Tour.PriceSale / Model.Tour.Price) * 100, 0))%*@</h3>
+            </div>
+            <div id="datepature">
+                <h3 class="h3-deal">Select your travel date</h3>
+                <div id="deal-datepicker"></div>
+                @if (Model.Tour.HotelService)
+                {
+                    <button id="date-select" class="btn btn-primary" style="width: 138px">BOOK NOW</button>
+                }
+                else
+                {
+                    <a href="/Booktour/@Model.Tour.ID/@Model.Tour.Alias/" id="date-select" class="btn btn-blue">BOOK NOW</a>
+                }
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    @if (Model.TabTours.Count > 1 || Model.TourGalleries.Count > 0)
+    {
+        string defaultTab = Model.TabTours.Count > 0 ? Model.TabTours[0].TitleTab : "";
+        defaultTab = StringHelper.ConvertToAlias(defaultTab);
+        <div id="tabbed-nav" style="margin: 40px 0px 20px; float:left;" class="content-container-anchor">
+
+            <!-- Tab Navigation Menu, to have seo friendly hashtags, add data-link attribute to each li tag and give it a unique id to apear in the url-->
+            <ul>
+                @foreach (var itemTab in Model.TabTours)
+                {
+                    <li data-link="@StringHelper.ConvertToAlias(itemTab.TitleTab)"><a>@itemTab.TitleTab</a></li>
+                }
+            </ul>
+
+            <!-- Content container -->
+            <div>
+                @foreach (var itemTab in Model.TabTours)
+                {
+                    <div>
+                        @Html.Raw(itemTab.Content)
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="full-width">
+            @if (Model.Tour.HotelService)
+            {
+                <button id="choise-hotel" style="margin-left: 0px; width: auto; margin: 0px 0px 20px; padding: 10px 20px;" class="btn btn-primary">BOOK NOW</button>
+            }
+            else
+            {
+                <a href="/Booktour/@Model.Tour.ID/@Model.Tour.Alias/" style="margin-left: 0px; width: auto; margin: 0px 0px 20px; padding: 10px 20px;" class="btn btn-blue">Book Tour</a>
+            }
+        </div>
+
+        <script>
+            var clock;
+            jQuery(document).ready(function ($) {
+                console.log('@second');
+                $('#flexslider-deal-carousel').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: false,
+                    itemWidth: 109,
+                    nextText: "",
+                    prevText: "",
+                    itemMargin: 5,
+                    asNavFor: '#flexslider-deal-slider'
+                });
+
+                $('#flexslider-deal-slider').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: false,
+                    nextText: "",
+                    prevText: "",
+                    sync: "#flexslider-deal-carousel"
+                });
+                $("#deal-datepicker").datepicker({
+                    minDate: new Date()
+                });
+                var clock;
+
+                clock = $('.clock').FlipClock({
+                    clockFace: 'DailyCounter',
+                    autoStart: false,
+                    callbacks: {
+                        stop: function () {
+                            $('.message').html('The clock has stopped!');
+                        }
+                    }
+                });
+                
+                clock.setTime(@second);
+                clock.setCountdown(true);
+                clock.start();
+               
+
+                /* jQuery activation and setting options for the tabs, also setting the the following:
+                    - deeplinking: for deep-linking
+                    - defaultTab: change it to one the new tab id*/
+                $("#tabbed-nav").zozoTabs({
+                    theme: "silver",
+                    position: "top-left",
+                    orientation: "horizontal",
+                    deeplinking: true,
+                    defaultTab: '@defaultTab'
+                });
+
+            });
+        </script>
+    }
+    else if (Model.TabTours.Count == 1)
+    {
+        <h1>@Model.Tour.Title</h1>
+        @Html.Raw(Model.TabTours[0].Content)
+    }
+    else
+    {
+        <h1>@Model.Tour.Title</h1>
+    }
+
+    @*@if (Model.ObjectsRelate.Count > 0)
+        {
+            <div class="full-width w-other-objects">
+                <h2 class="title-h1">Other Tours</h2>
+                <ul class="other-objects">
+                    @foreach (var item in Model.ObjectsRelate)
+                    {
+                        <li><a href="/@item.MenuAlias/@item.Id/@item.Alias">@item.Name</a></li>
+                    }
+                </ul>
+            </div>
+
+        }*@
+    <div class="clearfix"></div>
+</div>
+
+<style>
+    #flexslider-deal-carousel ul.slides li {
+        margin-right: 5px;
+    }
+
+        #flexslider-deal-carousel ul.slides li.flex-active-slide img {
+            border: 2px solid #ff0000 !important;
+        }
+
+        #flexslider-deal-carousel ul.slides li img {
+            border: 1px solid #ddd;
+        }
+
+    ul.gallery li {
+        width: 222px;
+        float: left;
+        margin: 0px 10px 8px 1px;
+    }
+
+        ul.gallery li img {
+            width: 220px;
+            height: 149px;
+            border: 1px solid #ccc;
+        }
+
+    .full-width {
+        width: 100%;
+        display: block;
+        float: left;
+    }
+
+    .w-other-objects {
+        margin-bottom: 50px;
+    }
+</style>
+
+@if (Model.Tour.HotelService)
+{
+    <div class="ng-scope">
+        <div class="desktop--deal-options">
+            <ul class="deal-options--list">
+                @if (Model.Tour.ThreeStar > 0)
+                {
+                    <li class="deal-options--option">
+                        <div class="deal-options--link">
+                            <div class="deal-options--title">
+                                <span truncate-text="3" class="ng-binding">3-@GetLanguage.Language(lan, "StarHotels") - @Model.Tour.Title</span>
+                                <br />
+                                <a href="/Booktour/@Model.Tour.ID/@Model.Tour.Alias/?option=1">Price PP Twin Share</a>
+                            </div>
+                            <ul class="deal-options--details" ng-if="panel.dealInfo.showDiscount">
+                                <li class="ng-binding">@save% off</li>
+                                <li class="ng-binding">@GetLanguage.Language(lan, "save") $@((double)Model.Tour.ThreeStar * save * 0.01)</li>
+                            </ul>
+
+                            <a href="/Booktour/@Model.Tour.ID/@Model.Tour.Alias/?option=1" class="deal-options--cost">
+                                <span class="cost--price-string "><strong>$@Model.Tour.ThreeStar</strong></span>
+                                <span class="cost--price-string" style="font-size: 14px">@GetLanguage.Language(lan, "BookNow")</span>
+                            </a>
+                        </div>
+                    </li>
+                }
+                @if (Model.Tour.FourStar > 0)
+                {
+                    <li class="deal-options--option">
+                        <div class="deal-options--link">
+                            <div class="deal-options--title">
+                                <span truncate-text="3" class="ng-binding">4-@GetLanguage.Language(lan, "StarHotels") - @Model.Tour.Title</span>
+                                <br />
+                                <a href="/Booktour/@Model.Tour.ID/@Model.Tour.Alias/?option=2">Price PP Twin Share</a>
+                            </div>
+                            <ul class="deal-options--details" ng-if="panel.dealInfo.showDiscount">
+                                <li class="ng-binding"> @save% off</li>
+                                <li class="ng-binding">@GetLanguage.Language(lan, "save") $@((double)Model.Tour.FourStar * save * 0.01)</li>
+                            </ul>
+
+                            <a href="/Booktour/@Model.Tour.ID/@Model.Tour.Alias/?option=2" class="deal-options--cost">
+                                <span class="cost--price-string"><strong>$@Model.Tour.FourStar</strong></span>
+                                <span class="cost--price-string" style="font-size: 14px">@GetLanguage.Language(lan, "BookNow")</span>
+                            </a>
+                        </div>
+                    </li>
+                }
+                @if (Model.Tour.FiveStar > 0)
+                {
+                    <li class="deal-options--option">
+                        <div class="deal-options--link">
+                            <div class="deal-options--title">
+                                <span truncate-text="3" class="ng-binding">5-@GetLanguage.Language(lan, "StarHotels") - @Model.Tour.Title</span>
+                                <br />
+                                <a href="/Booktour/@Model.Tour.ID/@Model.Tour.Alias/?option=3">Price PP Twin Share</a>
+                            </div>
+                            <ul class="deal-options--details" ng-if="panel.dealInfo.showDiscount">
+                                <li class="ng-binding"> @save% off</li>
+                                <li class="ng-binding">@GetLanguage.Language(lan, "save") $@((double)Model.Tour.FiveStar * save * 0.01)</li>
+                            </ul>
+
+                            <a href="/Booktour/@Model.Tour.ID/@Model.Tour.Alias/?option=3" class="deal-options--cost">
+                                <span class="cost--price-string "><strong>$@Model.Tour.FiveStar</strong></span>
+                                <span class="cost--price-string" style="font-size: 14px">@GetLanguage.Language(lan, "BookNow")</span>
+                            </a>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+}
+
+<script>
+    $(document).ready(function () {
+        $(".ng-scope").dialog(
+        {
+            autoOpen: false,
+            modal: true,
+            width: 800,
+            dialogClass: "show-option",
+            title: 'DEAL OPTIONS : @Model.Tour.Title'
+        });
+        $("#date-select").click(function () {
+            $(".ng-scope").dialog("open");
+        });
+        $("#choise-hotel").click(function () {
+            $(".ng-scope").dialog("open");
+        });
+    });
+</script>
+
+<style>
+    .show-option {
+        border: 1px solid #E8E8E8;
+        border-radius: 4px !important;
+        background: #fff;
+        color: #333333;
+        padding: 0px;
+    }
+
+    .z-tabs {
+        font-family: 'Open Sans', sans-serif !important;
+    }
+
+    .ng-scope {
+        padding: 10px 0px !important;
+    }
+
+    .deal-options--link {
+        width: 769px;
+        margin: 0px auto;
+    }
+
+    .show-option .ui-widget-header {
+        border: none;
+        background: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .show-option .ui-dialog-titlebar-close {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: url("/Plugins/jquery-ui/images/ui-icons_222222_256x240.png");
+        background-position: -95px -128px;
+    }
+
+    .desktop--deal-options {
+        width: 100%;
+        height: auto;
+        max-width: 800px;
+        max-height: 550px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .deal-options--option {
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #e0e0e0;
+        overflow: hidden;
+        transition: all .2s ease-in-out;
+        padding: 6px 5px;
+    }
+
+    .deal-options--title {
+        margin: 16px auto 8px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #333;
+        width: 45%;
+        float: left;
+    }
+
+        .deal-options--title a {
+            font-weight: normal;
+            font-size: 14px;
+            color: #2faef8;
+        }
+
+            .deal-options--title a:hover {
+                text-decoration: none;
+            }
+
+    .deal-options--details {
+        width: 30%;
+        clear: none;
+        padding: 25px 20px;
+        float: left;
+        font-size: 14px;
+    }
+
+        .deal-options--details li {
+            width: 50%;
+            margin: 0;
+            text-align: center;
+            float: left;
+        }
+
+    .deal-options--cost {
+        margin-top: 8px;
+        width: 180px;
+        right: 18px;
+        display: block;
+        float: right;
+        text-align: center;
+        height: 50px;
+        color: #fff;
+        border-bottom: 4px solid #0C4DA2;
+        font-size: 12px;
+        text-transform: uppercase;
+        background: #0C4DA2;
+        padding-top: 7px;
+        transition: all .12s ease-in-out;
+    }
+
+    .cost--price-string {
+        width: 100%;
+        float: left;
+        font-size: 18px;
+        color: #fff;
+        line-height: 20px;
+    }
+
+    .deal-options--cost:hover {
+        border-bottom: 4px solid #0C4DA2;
+    }
+
+    ul.deal-options--list li:last-child {
+        border: none;
+    }
+
+    .ui-widget-overlay {
+        background: rgba(0,0,0,.5);
+    }
+</style>

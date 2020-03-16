@@ -1,0 +1,95 @@
+﻿@using ProjectLibrary.Database
+@using TeamplateHotel.Handler
+@using TeamplateHotel.Controllers
+@using TeamplateHotel.Models
+@using PagedList.Mvc
+@using PagedList
+@model PagedList.IPagedList<Article>
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    Menu menu = ViewBag.Menu ?? new Menu();
+    //int i = 1;
+    string lan = Request.Cookies["LanguageID"].Value;
+    var detailHotel = CommentController.DetailHotel(lan);
+    List<ShowObject> acticelhot = CommentController.HotArticles(lan, menu.ID);
+    List<TabArticle> tabArticles = CommentController.GetTapArticles();
+}
+
+<style>
+    .text_blog div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /*số dòng muốn hiện */
+        /*font-size: 12px; /*cỡ chữ, đơn vị px */ */ line-height: 1.5em; /* khoảng cách giữa các dòng, đơn vị em*/
+        max-height: 63px;
+    }
+</style>
+<section class="body_">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row blog_home">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="blog_item">
+                                <div class="img_blog">
+                                    <a href="/@item.MenuAlias/@item.ID/@item.Alias"><img src="@item.Image"></a>
+                                </div>
+                                <div class="text_blog">
+                                    <a href="/@item.MenuAlias/@item.ID/@item.Alias"><h3>@item.Title</h3></a>
+                                    <span>@DateTime.Now.ToString("dd/mm/yyyy")</span>
+
+                                    <p class="text_conten">@Html.Raw(item.Description)</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
+                </div>
+                <div class="pagination">
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wrapper_border">
+                    <div class="banner">
+                        <a href=""><img src="~/Content/img/blog/ba1.jpg"></a>
+                    </div>
+                    <h3 class="top_post">Top popular articles</h3>
+                    <div class="top_viewPost">
+                        @foreach (var item in acticelhot)
+                        {
+                            <div class="item_view">
+                                <a href="/@item.MenuAlias/@item.ID/@item.Alias">
+                                    <img src="@item.Image">
+                                    <div class="text_view">
+                                        <h5>@item.Title</h5>
+                                        <small>@DateTime.Now.ToString("dd/mm/yyyy")</small>
+                                    </div>
+                                </a>
+                            </div>
+                        }
+
+                    </div>
+                    <h3 class="top_post">Top popular Tags</h3>
+                    <div class="tags">
+                        @foreach (var item in tabArticles)
+                        {
+                            <a href="">@item.Title</a>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@section scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/blogs.js"></script>
+}

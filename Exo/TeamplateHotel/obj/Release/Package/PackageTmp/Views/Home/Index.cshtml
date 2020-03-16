@@ -1,0 +1,200 @@
+﻿@using TeamplateHotel.Controllers
+@using TeamplateHotel.Handler
+@using TeamplateHotel.Models
+@using ProjectLibrary.Database
+@using ProjectLibrary.Config
+@using ProjectLibrary.Security
+@{
+    ViewBag.HomePage = true;
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    string lang = Request.Cookies["LanguageID"].Value;
+
+    List<ShowObject> listTourDeal = CommentController.TourDeal(lang);
+    List<ShowObject> listHightLightTours = CommentController.Tourhots(lang);
+    List<string> listVideos = new List<string>();
+    listVideos.Add("0LY7izWSQPM");
+    listVideos.Add("Lf-57LdCyxg");
+
+}
+
+<link href="~/Plugins/Flipclock/flipclock.css" rel="stylesheet" />
+<script src="~/Plugins/Flipclock/flipclock.min.js"></script>
+
+<link href="~/Plugins/Slider/flexSlider/flexslider.css" rel="stylesheet" />
+<script src="~/Plugins/Slider/flexSlider/jquery.flexslider-min.js"></script>
+<link href="~/Plugins/OWL-slider/owl.carousel.css" rel="stylesheet" />
+<section class="featured-destinations">
+    <div class="container">
+        <div class="cards overlap">
+            <div class="title-row">
+                <h3 class="title-entry">@GetLanguage.Language(lang, "SpecialPackage")</h3>
+                @*<a href="/Special-package" class="btn btn-primary btn-xs">@GetLanguage.Language(lang, "SeeMore") &nbsp; <i class="fa fa-angle-right"></i></a>*@
+            </div>
+            <div class="row">
+                <div id="owl-special-offer" class="owl-carousel owl-list">
+                    @foreach (var item in listTourDeal)
+                    {
+                        <div class="item">
+                            @if (CommentController.GetTimeSale(item.StartDeal, item.TimeDeal) != 0)
+                            {
+                                var a = DateTime.Parse(item.StartDeal.ToString());
+                                var b = DateTime.Now.Date;
+                                if (a == b || (a-b) < (b-a) )
+                                {
+                                    <article class="card">
+                                        <div class="wrap-time-line">
+                                            <div class="time-line">
+                                                <div class="left-time clock" data-value="@(CommentController.GetTimeSale(item.StartDeal, item.TimeDeal))"></div>
+
+                                            </div>
+                                        </div>
+                                        <a href="/@item.MenuAlias/@item.ID/@item.Alias" class="featured-image" style="background-image: url('@item.Image')">
+                                            <div class="featured-img-inner"></div>
+                                        </a>
+                                        <div class="card-details">
+                                            <h4 class="card-title"><a href="/@item.MenuAlias/@item.ID/@item.Alias">@item.Title</a></h4>
+                                            <div class="meta-details clearfix">
+                                                <ul class="hierarchy">
+                                                    <li style="margin-top: 5px;"><label style="font-size: 14px; color: red; font-weight:600">Form</label>&nbsp;<strong style="text-decoration: line-through; color: red; margin-right: 10px;"> $@item.Price.ToString("N")</strong><span style="font-size: 1.4em; color:#0261A9">$@item.PriceSale.ToString("N")</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                }
+                            }
+                        </div>
+                    }
+                </div>
+
+            </div><!--/.row-->
+        </div>
+    </div>
+</section>
+
+<section class="regular background" style="margin: -34px auto 0px auto; padding-bottom: 80px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="l-hightlight-tour" class="f-width">
+                    <h1 class="title-h1">@GetLanguage.Language(lang, "HighlightTours")</h1>
+                    <div class="content-2 f-width">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="ul-hightlight">
+                                    @foreach (var tour in listHightLightTours.OrderBy(a => a.Index).Take(3))
+                                    {
+                                        <li>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <a href="/@tour.MenuAlias/@tour.ID/@tour.Alias" class="left"><img src="@tour.Image" alt="@tour.Title" /></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-8 hl-info-right">
+                                                <h4><a href="/@tour.MenuAlias/@tour.ID/@tour.Alias">@tour.Title</a></h4>
+                                                @if (tour.Description.Length > 160)
+                                                {
+                                                    @Html.Raw(tour.Description.Substring(0, 160).ToString())<span>...</span>
+                                                }
+                                                else
+                                                {
+                                                    @Html.Raw(tour.Description)
+                                                }
+
+                                            </div>
+                                            <span class="clearfix"></span>
+                                        </li>
+                                    }
+                                </ul>
+                                <a href="/best-sellers-tours" id="more-highlight">Show more...</a>
+                            </div>
+                            <div class="col-md-6 pull-right flexslider" id="slider-video">
+                                <ul class="slides">
+                                    @foreach (var item in listVideos)
+                                    {
+                                        <li>
+                                            <iframe width="100%" height="420" src="https://www.youtube.com/embed/@item" frameborder="0" allowfullscreen></iframe>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="clearfix"></div>
+<style>
+    .usfull-div {
+        margin-bottom: 5px;
+    }
+
+    .accordion-card .accordion-panel .panel:before {
+        left: 0px;
+    }
+</style>
+<script src="~/Plugins/OWL-slider/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#owl-special-offer").owlCarousel({
+            loop: true,
+            responsiveClass: true,
+            autoplay: true,
+            items: 4, //10 items above 1000px browser width
+            navigation: true,
+            navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    var clock;
+
+    $(document).ready(function () {
+        $('.left-time').each(function () {
+            var clock;
+            clock = $(this).FlipClock({
+                clockFace: 'DailyCounter',
+                autoStart: false,
+                callbacks: {
+                    stop: function () {
+                        $('.message').html('The clock has stopped!');
+                    }
+                }
+            });
+            clock.setTime($(this).data("value"));
+            clock.setCountdown(true);
+            clock.start();
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+
+        $('#slider-video').flexslider({
+            animation: "fade",
+            slideshow: false,                //Boolean: Animate slider automatically
+            slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+            animationSpeed: 600,
+            controlNav: false,
+            itemWidth: 496,
+            itemMargin: 1,
+            nextText: "",
+            prevText: "",
+        });
+    });
+</script>

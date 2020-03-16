@@ -1,0 +1,240 @@
+﻿@using ProjectLibrary.Database
+@using TeamplateHotel.Handler
+@using TeamplateHotel.Controllers
+@using TeamplateHotel.Models
+@using PagedList.Mvc
+@using PagedList
+@model PagedList.IPagedList<TeamplateHotel.Models.ShowObject>
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    Menu menu = ViewBag.Menu ?? new Menu();
+    var company = CommentController.DetailHotel(Request.Cookies["LanguageID"].Value);
+}
+
+<section class="full-screen bg-tour">
+    <div class="video-main ">
+        <img src="~/Content/images/bg-2.jpg" alt="">
+    </div>
+</section>
+
+<section class="tour-content">
+    <div class="container">
+        <input type="hidden" id="slugguugug" value="@ViewBag.slug" />
+        <div class="row icon-between ">
+            <p>
+                <img src="~/Content/images/icon-menu/icon-search-catalogue.png" class="icon-our-asia" alt=" ">
+            </p>
+        </div>
+        <div class="row mg-bt-40">
+            <div class="col-lg-4 col-md-6 group-view">
+                <div class="button-group layout-mode-button-group" id="btnContainer">
+                    <button class="btn-list-view bt-view" onclick="listView()"><i class="fas fa-list icon-view"></i>LIST VIEW</button>
+                    <button class="btn-grid-view bt-view active" onclick="gridView()"><i class="fas fa-th icon-view"></i>GRID VIEW</button>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 groug-results">
+                <div class="found"> <span class="font-16">RESULTS FOUND:</span><span class="green"></span></div>
+                <div class="view">
+                    <span class="font-16">VIEW:</span>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">09</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <ul>
+                                <li><a href="#">09</a></li>
+                                <li><a href="#">18</a></li>
+                                <li><a href="#">27</a></li>
+                                <li><a href="#">36</a></li>
+                                <li><a href="#">45</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="font-16">PER PAGE</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <div class="our_Sort">
+                    <div>
+                        <span>Sort by:</span>
+                        <select onchange="OrderBy(value)">
+                            <option value="0">Default</option>
+                            <option value="1">Từ thấp đến cao</option>
+                            <option value="2">Từ cao đến thấp</option>
+                        </select>
+                    </div>
+                </div>
+                @*<div class="dropdown filter-tour">
+                        <button class="btn btn-secondary dropdown-toggle sort-by" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort by
+                        </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">A To Z</a>
+                            <a class="dropdown-item" href="#">Z to A</a>
+                            <a class="dropdown-item active" href="#">Most Popular</a>
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+        <div class="row pd-bottom-40">
+            <div class="col-lg-3 col-md-12">
+                <div class="reset-op mg-bot-20">
+                    <button type="button" class="btn-round btn-reset">
+                        <i class="fas fa-times"></i>Reset options
+                    </button>
+                </div>
+                <div class="left-searchbox left-panel mg-bot-20">
+                    <div class="border-radius-top">Search Tours</div>
+                    <div class="filters-search search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="search-box" placeholder="Type Tour Name" title="Search">
+                    </div>
+                </div>
+                <div class="left-panel mg-bot-20">
+                    <div class="border-radius-top">style</div>
+                    <div class="filters search-box">
+                        <ul class="list-group">
+                            <li class="rfn-active-travel">
+                                <div class="roundedOne">
+                                    <label class="custom-check">
+                                        Active Travel (388)
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="left-panel mg-bot-20">
+                    <div class="border-radius-top">Responsible Benefits</div>
+                    <div class="filters search-box">
+                        <ul class="list-group">
+                            <li class="rfn-honeymoon">
+                                <div class="roundedOne">
+                                    <label class="custom-check">
+                                        Carbon Friendly (13)
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="rfn-luxury">
+                                <div class="roundedOne">
+                                    <label class="custom-check">
+                                        Cultural Interaction (49)
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="rfn-nature-wildlife">
+                                <div class="roundedOne">
+                                    <label class="custom-check">
+                                        Locals Benefit (5)
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="rfn-short-trips">
+                                <div class="roundedOne">
+                                    <label class="custom-check">
+                                        Making a Difference (18)
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="rfn-undiscovered-asia">
+                                <div class="roundedOne">
+                                    <label class="custom-check">
+                                        Social Impact (23)
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-12" id="showdatahotelt">
+                @Html.Action("ListTours", "Home", new { slug = ViewBag.slug, page = ViewBag.page })
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-darks">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    <img src="~/Content/images/img-svg/icon-all-social.svg" alt="" class="icon-svg">
+                </p>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2 class="hightlight-underline">our asia</h2>
+                <blockquote class="about-quote">
+                    <p>For inspiring experiences, real-time updates, the latest trends or casual conversation, explore our social networks for all things travel.</p>
+                </blockquote>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="social-links mg-bt-40">
+                    <a target="_blank" title="Facebook" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" title="Twitter" href=""><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" title="Linkedin" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a target="_blank" title="Googleplus" href=""><i class="fab fa-google-plus-g"></i></a>
+                    <a target="_blank" title="Pinterest" href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a target="_blank" title="Youtube" href=""><i class="fab fa-youtube"></i></a>
+                    <a target="_blank" title="Instagram" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="brand">
+    <div class="container">
+        <div class="row">
+            <div class="large-12 columns col-md-12">
+                <div class="destination-slider owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/1.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/2.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/3.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/4.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/5.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,145 @@
+﻿@using ProjectLibrary.Database
+@using TeamplateHotel.Controllers
+@using TeamplateHotel.Handler
+@model IEnumerable<Contact>
+@{
+    string lan = Request.Cookies["LanguageID"].Value;
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    var hotel = CommentController.DetailHotel(Request.Cookies["LanguageID"].Value);
+    Menu menu = ViewBag.Menu ?? new Menu();
+}
+<script src="/Scripts/jquery-1.10.2.min.js"></script>
+<script src="/Scripts/intlTelInput.js"></script>
+<link href="~/Plugins/Validate/jquery-validation-1.13.1/jquery-validation.css" rel="stylesheet" />
+<script src="~/Plugins/Validate/jquery-validation-1.13.1/jquery.validate.min.js"></script>
+<script src="~/Plugins/Validate/jquery-validation-1.13.1/additional-methods.min.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/css/contact.css">
+<style>
+    .radio_contact input{
+        width: auto;
+        height: auto
+    }
+</style>
+<main>
+    <section class="form_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 wraper_main">
+                    <div class="main_form">
+                        <h1>Contact</h1>
+                        <p class="text-left">Du lundi au vendredi, 09 h 00 à 18 h 30, samedi & dimanche, 09 h 00 à 21 h 00</p>
+                        <p class="text-left">
+                           
+                            <a href="javascript:void(0)" >Phone </a>: @hotel.Tel
+                        </p>
+                        
+                        <div class="formul">
+                            <h2>Formulaire de contact</h2>
+                            <p>Nous vous remercions de l’intérêt que vous portez à nos offres. C’est avec plaisir que nous transmettons votre demande à l’un de nos experts qui vous contactera.</p>
+                        </div>
+                        <div class="form">
+                            <form action="/bookcontact" method="post" id="contactform">
+                                <div class="form-group">
+                                    <label for="name">Sujet *</label><br>
+                                    <select name="Sujet">
+                                        <option value="Contact">Contact</option>
+                                        <option value="Request">Request</option>
+                                        <option value="FeedBack">Feedback</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group radio_contact">
+                                    <label class="text_name">Gender *</label><br>
+
+                                    <input type="radio" name="Gender"  tabindex="2" value="Mr" checked/>
+                                    <label for="radio-choice-1"> Mr </label>
+
+                                    <input type="radio" required="required" name="Gender" tabindex="3" value="Mr" />
+                                    <label for="radio-choice-2"> Ms </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="select-choice" class="text_name">FirstName *</label><br>
+                                    <input type="text" name="FirstName" class=" form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="textarea" class="text_name">LastName *</label><br>
+                                    <input type="text" name="LastName" class=" form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="checkbox" class="text_name">Tel</label><br>
+                                    <input type="text" name="Tel"  class=" form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkbox" class="text_name">Email *</label><br>
+                                    <input type="email" name="Email"  class=" form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkbox" class="text_name">NPA *</label><br>
+                                    <input type="text" name="NPA"  class=" form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkbox" class="text_name">Message</label> <br>
+                                    <textarea rows="2" name="Subject" class=" form-control"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script type="text/javascript">
+    function LoadingSendEmail() {
+        $("#wraploadding").show();
+        $("#wraploadding").css("width", $(window).width());
+        $("#wraploadding").css("height", $(window).height());
+        $("#imgloadding ").css("top", ($(window).height() / 2) - 80);
+    }
+    //validate
+    jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+    });
+    $("#contactform").validate({
+        rules: {
+            'FirstName': {
+                required: true,
+            },
+            'LastName': {
+                required: true,
+            },
+            'Tel': {
+                required: true,
+            },
+            'Email': {
+                required: true,
+                email: true
+            },
+            'Subject': {
+                required: true,
+            },
+        },
+        messages: {
+            'FirstName': "Please enter First Name",
+            'FirstName': "Please enter First Name",
+            'Tel': "Please enter Tel",
+            'Email': "Please enter Email Adress",
+            'Subject': "Please enter Content",
+        },
+        submitHandler: function (form) {
+            form.submit();
+            LoadingSendEmail();
+        }
+    });
+</script>
+

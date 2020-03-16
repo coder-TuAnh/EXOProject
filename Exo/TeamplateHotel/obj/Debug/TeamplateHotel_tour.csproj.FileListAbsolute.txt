@@ -1,0 +1,896 @@
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll.config
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.pdb
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Infrastructure.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebGrease.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.pdb
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll.config
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.pdb
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.pdb
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.xml
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.Edm.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.Edm.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.Edm.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.OData.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.OData.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.OData.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.OData.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.OData.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.OData.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.OData.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\System.Spatial.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\System.Spatial.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\System.Spatial.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\System.Spatial.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\System.Spatial.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\System.Spatial.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\System.Spatial.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\System.Spatial.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\System.Spatial.resources.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csprojResolveAssemblyReference.cache
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CoreCompileInputs.cache
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CopyComplete
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.dll
+D:\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.pdb
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll.config
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.pdb
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Infrastructure.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebGrease.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.pdb
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll.config
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.pdb
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.pdb
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.OData.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.OData.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.OData.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\System.Spatial.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\System.Spatial.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\System.Spatial.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\System.Spatial.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\System.Spatial.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\System.Spatial.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\System.Spatial.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\System.Spatial.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\System.Spatial.resources.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csprojAssemblyReference.cache
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CoreCompileInputs.cache
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CopyComplete
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.pdb
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll.config
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.pdb
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebGrease.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.pdb
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll.config
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.pdb
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.pdb
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\System.Spatial.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\System.Spatial.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\System.Spatial.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\System.Spatial.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\System.Spatial.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\System.Spatial.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\System.Spatial.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csprojAssemblyReference.cache
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CopyComplete
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.pdb
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll.config
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.pdb
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Infrastructure.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebGrease.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.pdb
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll.config
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.pdb
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.pdb
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.Edm.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.Edm.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.Edm.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.Edm.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.Edm.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.Edm.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.Edm.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.OData.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.OData.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.OData.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.OData.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.OData.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.OData.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.OData.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\System.Spatial.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\System.Spatial.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\System.Spatial.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\System.Spatial.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\System.Spatial.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\System.Spatial.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\System.Spatial.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\System.Spatial.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\System.Spatial.resources.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csprojAssemblyReference.cache
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CoreCompileInputs.cache
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CopyComplete
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.pdb
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll.config
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.pdb
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Infrastructure.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebGrease.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.pdb
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll.config
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.pdb
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.pdb
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.Edm.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.Edm.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.Edm.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.Edm.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.Edm.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.Edm.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.Edm.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.OData.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.OData.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.OData.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.OData.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.OData.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.OData.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.OData.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\de\System.Spatial.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\es\System.Spatial.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\fr\System.Spatial.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\it\System.Spatial.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ja\System.Spatial.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ko\System.Spatial.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\ru\System.Spatial.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\System.Spatial.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\System.Spatial.resources.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csprojAssemblyReference.cache
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CoreCompileInputs.cache
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CopyComplete
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.pdb
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll.config
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.pdb
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Infrastructure.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebGrease.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.pdb
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll.config
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.pdb
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.pdb
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.Edm.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.Edm.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.Edm.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.OData.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.OData.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.OData.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.OData.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.OData.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.OData.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.OData.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\de\System.Spatial.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\es\System.Spatial.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\fr\System.Spatial.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\it\System.Spatial.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ja\System.Spatial.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ko\System.Spatial.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ru\System.Spatial.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\System.Spatial.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\System.Spatial.resources.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csprojAssemblyReference.cache
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CopyComplete
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.pdb
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll.config
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.pdb
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebGrease.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.pdb
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll.config
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.pdb
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.pdb
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\de\System.Spatial.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\es\System.Spatial.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\fr\System.Spatial.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\it\System.Spatial.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ja\System.Spatial.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ko\System.Spatial.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ru\System.Spatial.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csprojAssemblyReference.cache
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CopyComplete
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.pdb
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll.config
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\TeamplateHotel.pdb
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Infrastructure.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebGrease.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.pdb
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ProjectLibrary.dll.config
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Antlr3.Runtime.pdb
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\CKFinder_ImageResize.pdb
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Newtonsoft.Json.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\PagedList.Mvc.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Optimization.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\EntityFramework.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Net.Http.Formatting.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Helpers.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.WebHost.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Mvc.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Razor.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Deployment.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.WebPages.Razor.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.Data.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\WebMatrix.WebData.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.AspNet.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.Core.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OAuth.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Web.Http.OData.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.Edm.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\Microsoft.Data.OData.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\System.Spatial.xml
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.Edm.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.Edm.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.Edm.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.Edm.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.Edm.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.Edm.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.Edm.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\de\Microsoft.Data.OData.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\es\Microsoft.Data.OData.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\fr\Microsoft.Data.OData.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\it\Microsoft.Data.OData.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ja\Microsoft.Data.OData.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ko\Microsoft.Data.OData.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ru\Microsoft.Data.OData.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\de\System.Spatial.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\es\System.Spatial.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\fr\System.Spatial.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\it\System.Spatial.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ja\System.Spatial.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ko\System.Spatial.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\ru\System.Spatial.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hans\System.Spatial.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\bin\zh-Hant\System.Spatial.resources.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csprojAssemblyReference.cache
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CopyComplete
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.dll
+B:\Github\Kuoni\Source\TeamplateHotel\TeamplateHotel\obj\Debug\TeamplateHotel.pdb
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\TeamplateHotel.dll.config
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\TeamplateHotel.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\TeamplateHotel.pdb
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Antlr3.Runtime.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\CKFinder.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\CKFinder_ImageResize.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.AspNet.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.Core.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.OAuth.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.OpenId.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\EntityFramework.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Microsoft.Data.Edm.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Microsoft.Data.OData.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Microsoft.Web.Infrastructure.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Newtonsoft.Json.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\PagedList.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\PagedList.Mvc.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ProjectLibrary.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Net.Http.Formatting.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Spatial.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Helpers.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Http.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Http.OData.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Http.WebHost.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Mvc.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Optimization.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Razor.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.WebPages.Deployment.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.WebPages.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.WebPages.Razor.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\WebGrease.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\WebMatrix.Data.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\WebMatrix.WebData.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ProjectLibrary.pdb
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ProjectLibrary.dll.config
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Antlr3.Runtime.pdb
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\CKFinder_ImageResize.pdb
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Newtonsoft.Json.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\PagedList.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\PagedList.Mvc.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Optimization.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\EntityFramework.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Net.Http.Formatting.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Helpers.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Http.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Http.WebHost.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Mvc.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Razor.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.WebPages.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.WebPages.Deployment.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.WebPages.Razor.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\WebMatrix.Data.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Microsoft.Web.WebPages.OAuth.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\WebMatrix.WebData.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.AspNet.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.Core.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.OAuth.Consumer.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.OAuth.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.OpenId.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Web.Http.OData.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Microsoft.Data.Edm.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\Microsoft.Data.OData.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\System.Spatial.xml
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\de\Microsoft.Data.Edm.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\es\Microsoft.Data.Edm.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\fr\Microsoft.Data.Edm.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\it\Microsoft.Data.Edm.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ja\Microsoft.Data.Edm.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ko\Microsoft.Data.Edm.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ru\Microsoft.Data.Edm.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\de\Microsoft.Data.OData.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\es\Microsoft.Data.OData.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\fr\Microsoft.Data.OData.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\it\Microsoft.Data.OData.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ja\Microsoft.Data.OData.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ko\Microsoft.Data.OData.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ru\Microsoft.Data.OData.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\de\System.Spatial.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\es\System.Spatial.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\fr\System.Spatial.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\it\System.Spatial.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ja\System.Spatial.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ko\System.Spatial.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\ru\System.Spatial.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\zh-Hans\System.Spatial.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\bin\zh-Hant\System.Spatial.resources.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csprojAssemblyReference.cache
+B:\Github\EXOProject\Exo\TeamplateHotel\obj\Debug\TeamplateHotel_tour.csproj.CopyComplete
+B:\Github\EXOProject\Exo\TeamplateHotel\obj\Debug\TeamplateHotel.dll
+B:\Github\EXOProject\Exo\TeamplateHotel\obj\Debug\TeamplateHotel.pdb

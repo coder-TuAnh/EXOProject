@@ -1,0 +1,962 @@
+﻿@using TeamplateHotel.Areas.Administrator.EntityModel
+@model ETour
+@{
+    Layout = "~/Areas/Administrator/Views/Templates/_LayoutPage.cshtml";
+    int flag = 0;
+    int count = 0;
+
+}
+<div class="span12">
+    <div class="widget ">
+        <div class="widget-header">
+            <i class=" icon-plus-sign"></i>
+            <h3>@ViewBag.Title</h3>
+        </div> <!-- /widget-header -->
+
+        <div class="widget-content">
+            @Html.ValidationSummary(true)
+            @using (Html.BeginForm("Create", "Tour", FormMethod.Post, new { @class = "form-horizontal" }))
+            {
+                <div class="control-group">
+                    <label class="control-label" for="MenuID">Menu<span class="asterisk">*</span></label>
+                    <div class="controls">
+                        @Html.DropDownListFor(p => p.MenuID, new SelectList(ViewBag.ListMenu, "Value", "Text"), new { @class = "span3" })
+                        @Html.ValidationMessageFor(p => p.MenuID)
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="ActivitiID">ActivitiID<span class="asterisk">*</span></label>
+                    <div class="controls">
+                        @Html.DropDownListFor(p => p.ActivitisID, new SelectList(ViewBag.ListMenu2, "Value", "Text"), new { @class = "span3" })
+                        @Html.ValidationMessageFor(p => p.ActivitisID)
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="Title">Tour<span class="asterisk">*</span></label>
+                    <div class="controls">
+                        @Html.TextBoxFor(c => c.Title, new { @class = "span4" })
+                        @Html.ValidationMessageFor(c => c.Title)
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    @Html.LabelFor(c => c.Alias, new { @class = "control-label" })
+                    <div class="controls">
+                        @Html.TextBoxFor(c => c.Alias, new { @class = "span4" })
+                        @Html.ValidationMessageFor(c => c.Alias)
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="Image">Image<span class="asterisk">*</span></label>
+                    <div class="controls">
+                        @Html.TextBoxFor(c => c.Image, new { @class = "span4 inputbox upload" })
+                        @Html.ValidationMessageFor(c => c.Image)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="Title">Location<span class="asterisk">*</span></label>
+                    <div class="controls">
+                        @Html.TextAreaFor(c => c.Location, new { @class = "span4 inputbox" })
+                        @Html.ValidationMessageFor(c => c.Location)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="Title">Time<span class="asterisk">*</span></label>
+                    <div class="controls">
+                        @Html.TextBoxFor(c => c.Time, new { @class = "span4" })
+                        @Html.ValidationMessageFor(c => c.Time)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="Title">Price<span class="asterisk">*</span></label>
+                    <div class="controls">
+                        @Html.TextBoxFor(c => c.Price, new { @class = "span4", @value = 0, @type = "number" })
+                        @Html.ValidationMessageFor(c => c.Price)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="Title">Price sale</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(c => c.PriceSale, new { @class = "span4", @value = 0, @type = "number" })
+                        @Html.ValidationMessageFor(c => c.PriceSale)
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="Title">Status</label>
+                    <div class="controls">
+                        @Html.CheckBoxFor(c => c.Status, new { @checked = true })
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="Title">Package Tour</label>
+                    <div class="controls">
+                        @Html.CheckBoxFor(c => c.Deal, new { @checked = true })
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="Title">Tour Hight Light</label>
+                    <div class="controls">
+                        @Html.CheckBoxFor(c => c.Hot, new { @checked = true })
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="Title">Tour Like</label>
+                    <div class="controls">
+                        @Html.CheckBoxFor(c => c.Like, new { @checked = true })
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="Title">Tour Best</label>
+                    <div class="controls">
+                        @Html.CheckBoxFor(c => c.TourOther, new { @checked = true })
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="CodeBooking">Menu Themes<span class="asterisk" style="display: inline; float: none">*</span></label>
+                    <div class="controls">
+                        @Html.DropDownListFor(m => m.Theme, (IEnumerable<SelectListItem>)ViewBag.ListMenu3, new { @class = "span4", style = "width: 300px;display: inline;", multiple = "multiple" })
+                    </div>
+                </div>
+                <div class="control-group">
+                    @Html.LabelFor(c => c.Description, new { @class = "control-label" })
+                    <div class="controls">
+                        @Html.TextAreaFor(c => c.Description, new { @class = "basic-ckeditor" })
+                    </div>
+                </div>
+                <div class="control-group" style="margin-top: 40px">
+                    @Html.LabelFor(c => c.TourIncluded, new { @class = "control-label" })
+                    <div class="controls">
+                        @Html.TextAreaFor(c => c.TourIncluded, new { @class = "basic-ckeditor" })
+                    </div>
+                </div>
+                <div class="control-group" style="margin-top: 40px">
+                    @Html.LabelFor(c => c.TourExcluded, new { @class = "control-label" })
+                    <div class="controls">
+                        @Html.TextAreaFor(c => c.TourExcluded, new { @class = "basic-ckeditor" })
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="clr"></div>
+                        <h3 class="mg-h">Itinerary</h3>
+                        <select id="ListName" style="width: 122px;">
+                            @if (Model.TabTours != null)
+                            {
+                                foreach (var tab in Model.TabTours)
+                                {
+                                    <option value="@count">@tab.TitleTab</option>
+                                    count++;
+                                    <div id="divprice_@(count)" class="price-tabtour" style="display: block;">
+                                        <strong>Price: </strong>
+                                        <input type="text" id="TabTours_@(count)__Price" name="TabTours[@(count)].Price" value="@tab.Price" class="span1 price-tab" />
+                                    </div>
+                                    <h4 id="Content_@(count)" style="@(count > 0 ? "display: none" : "")">Content Tab Tour : @tab.TitleTab</h4>
+                                    <div style="clear: both">
+                                        <textarea id="TabTours_@(count)__Content" style="@(count > 0 ? "display: none" : "")" name="TabTours[@count].Content" rows="20" class="full-ckeditor">@tab.Content</textarea>
+                                        <input type="hidden" class="title-tab" id="TabTours_@(count)__TitleTab" name="TabTours[@count].TitleTab" value="@tab.TitleTab" />
+                                    </div>
+                                    count++;
+                                }
+                            }
+                        </select>
+                        <button id="changeName" type="button" style="display: none" class="btn btn-primary">Update</button>
+                        <input type="text" id="tabName" style="min-width: 1px; width: 122px" />
+                        <button id="saveName" type="button" style="display: none" class="btn btn-primary">Save</button>
+                        <button id="delName" type="button" style="display: none" class="btn btn-primary">Delete</button>
+                        <button type="button" id="addTab" class="btn btn-primary">Add </button>
+                        <div class="clr"></div>
+                        <div style="width: 100%; height: auto; clear: both" class="" id="Display-Tabs">
+                            @{
+                                count = 0;
+                                if (Model.TabTours != null)
+                                {
+                                    foreach (var tab in Model.TabTours)
+                                    {
+                                        <div id="divprice_@(count)" class="price-tabtour" style="display: block;">
+                                            <strong>Price: </strong>
+                                            <input type="text" id="TabTours_@(count)__Price" name="TabTours[@(count)].Price" value="@tab.Price" class="span1 price-tab" />
+                                        </div>
+                                        <h4 id="Content_@(count)" style="@(count > 0 ? "display: none" : "")">Content Tab Tour : @tab.TitleTab</h4>
+                                        <div style="clear: both">
+                                            <textarea id="TabTours_@(count)__Content" style="@(count > 0 ? "display: none" : "")" name="TabTours[@count].Content" rows="20" class="full-ckeditor">@tab.Content</textarea>
+                                            <input type="hidden" class="title-tab" id="TabTours_@(count)__TitleTab" name="TabTours[@count].TitleTab" value="@tab.TitleTab" />
+                                        </div>
+                                        count++;
+                                    }
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="clr"></div>
+                        <h3 class="mg-h">Tab Tour</h3>
+                        <select id="ListName2" style="width: 122px;">
+                            @if (Model.TabHotels != null)
+                            {
+                                foreach (var tab in Model.TabHotels)
+                                {
+                                    <option value="@count">@tab.TitleTabHotel</option>
+                                    count++;
+                                    <div id="divprice2_@(count)" class="price-tabtour2" style="display: block;">
+                                        <strong>Price: </strong>
+                                        <input type="text" id="TabHotels_@(count)__Price" name="TabHotels[@(count)].Price" value="0" class="span1 price-tab" />
+                                    </div>
+                                    <h4 id="Content_@(count)" style="@(count > 0 ? "display: none" : "")">Content Tab Tour : @tab.TitleTabHotel</h4>
+                                    <div style="clear: both">
+                                        <textarea id="TabHotels_@(count)__Content" style="@(count > 0 ? "display: none" : "")" name="TabHotels[@count].ContentHotel" rows="20" class="full-ckeditor">@tab.ContentHotel</textarea>
+                                        <input type="hidden" class="title-tab" id="TabTours_@(count)__TitleTab" name="TabHotels[@count].TitleTabHotel" value="@tab.TitleTabHotel" />
+                                    </div>
+                                    count++;
+                                }
+                            }
+                        </select>
+                        <button id="changeName2" type="button" style="display: none" class="btn btn-primary">Update</button>
+                        <input type="text" id="tabName2" style="min-width: 1px; width: 122px" />
+                        <button id="saveName2" type="button" style="display: none" class="btn btn-primary">Save</button>
+                        <button id="delName2" type="button" style="display: none" class="btn btn-primary">Delete</button>
+                        <button type="button" id="addTab2" class="btn btn-primary">Add </button>
+                        <div class="clr"></div>
+                        <div style="width: 100%; height: auto; clear: both" class="" id="Display-Tabs2">
+                            @{
+                                count = 0;
+                                if (Model.TabHotels != null)
+                                {
+                                    foreach (var tab in Model.TabHotels)
+                                    {
+                                        <div id="divprice2_@(count)" class="price-tabtour2" style="display: block;">
+                                            <strong>Price: </strong>
+                                            <input type="text" id="TabHotels_@(count)__Price" name="TabHotels[@(count)].Price" value="0" class="span1 price-tab" />
+                                        </div>
+                                        <h4 id="Content2_@(count)" style="@(count > 0 ? "display: none" : "")">Content Tab Tour : @tab.TitleTabHotel</h4>
+                                        <div style="clear: both">
+                                            <textarea id="TabHotels_@(count)__Content" style="@(count > 0 ? "display: none" : "")" name="TabHotels[@count].ContentHotel" rows="20" class="full-ckeditor">@tab.ContentHotel</textarea>
+                                            <input type="hidden" class="title-tab" id="TabTours_@(count)__TitleTab" name="TabHotels[@count].TitleTabHotel" value="@tab.TitleTabHotel" />
+                                        </div>
+                                        count++;
+                                    }
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <h3 class="mg-h">Add image for tour</h3>
+                        <ul class="adminformlist">
+                            <li class="imgthumb">
+                                <label>Image </label>
+                                <input type="text" id="img-thumb" style="min-width: 190px" class="upload" />
+                                <button type="button" id="add" class="btn btn-primary">Insert</button>
+                            </li>
+                            <li>
+                                <ul style="clear: both; height: auto; width: 100%;" class="allImage" id="">
+                                    @if (Model.EGalleryITems != null)
+                                    {
+                                        foreach (EGalleryITem gallery in Model.EGalleryITems)
+                                        {
+                                            <li>
+                                                <input id="EGalleryITems_@(flag)__Image" name="EGalleryITems[@(flag)].Image" type="hidden" value="@(gallery.Image)" />
+                                                <img src="@(gallery.Image)" width="100" />
+                                            </li>
+
+                                            flag++;
+                                        }
+                                    }
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                    <a href="@Url.Action("Index", "Tour")" class="btn">Cancel</a>
+                </div>
+
+                <div class="control-seo">
+                    <h3 class="mg-h">Optimize Search Tool(Seo)</h3>
+                    <div class="control-group">
+                        @Html.LabelFor(c => c.MetaTitle)
+                        <div class="jtable-input jtable-text-input">
+                            @Html.TextAreaFor(c => c.MetaTitle, new { @class = "span4 meta-seo" })
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        @Html.LabelFor(c => c.MetaDescription)
+                        <div class="jtable-input jtable-text-input">
+                            @Html.TextAreaFor(c => c.MetaDescription, new { @class = "span4 meta-seo" })
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<ul id='context-menu'>
+    <li>Delete</li>
+</ul>
+
+
+<script type="text/javascript">
+    var counts = 0;
+    var count = 0;
+    function changeNameTag() {
+        $('#ListName').unbind();
+        $('#changeName').unbind();
+        $('#saveName').unbind();
+        $('#delName').unbind();
+
+        if ($('#ListName').val() != "") {
+            $('#changeName').show();
+        }
+
+        $('#changeName').click(function () {
+            $('#tabName').val($('#ListName').find(":selected").text());
+            $('#addTab').hide();
+            $('#saveName').show();
+            $('#delName').show();
+
+        });
+        $('#saveName').click(function () {
+            $('#ListName').find(":selected").text($('#tabName').val());
+            $('#saveName').hide();
+            $('#delName').hide();
+            $('#addTab').show();
+            //change value
+
+            $('#TabTours_' + $('#ListName').val() + '__TitleTab').val($('#tabName').val());
+            $('#Price_' + $('#ListName').val()).text('Giá :' + $('#tabName').val());
+            $('#Content_' + $('#ListName').val()).text('Nội dung lịch trình :' + $('#tabName').val());
+
+            //
+            $('#tabName').val("");
+        });
+        $('#delName').click(function () {
+            if (confirm("Are you sure?")) {
+                // your deletion code
+                //TabTours_[0]__Name
+                $('#TabTours_' + $('#ListName').val() + '__Content').parent().remove();
+                $('#TabTours_' + $('#ListName').val() + '__TitleTab').remove();
+                $('#divprice_' + $('#ListName').val() + '').remove();
+                $('#Content_' + $('#ListName').val() + ' ').remove();
+
+                $('#cke_TabTours_' + $('#ListName').val() + '__Content').remove();
+
+                //
+                $('#ListName').find(":selected").remove();
+                sapxepListName();
+                sapxepTab();
+                $('#tabName').val("");
+                //
+                if ($('#ListName').val() != null) {
+
+                    CKEDITOR.replace('TabTours_' + $('#ListName').val() + '__Content', {
+                        height: '400px',
+                        toolbar: [
+                            { name: 'document', groups: ['mode', 'document', 'doctools'], items: ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates'] },
+                            { name: 'clipboard', groups: ['clipboard', 'undo'], items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+                            { name: 'editing', groups: ['find', 'selection', 'spellchecker'], items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+                            { name: 'forms', items: ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'] },
+                            '/',
+                            { name: 'basicstyles', groups: ['basicstyles', 'cleanup'], items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+                            { name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi'], items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language'] },
+                            { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+                            { name: 'insert', items: ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe'] },
+                            '/',
+                            { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+                            { name: 'colors', items: ['TextColor', 'BGColor'] },
+                            { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+                            { name: 'others', items: ['-'] },
+                            { name: 'about', items: ['About'] }
+                        ]
+                    });
+                    $('#Content_' + $('#ListName').val() + ' ').show();
+                    $('#divprice_' + $('#ListName').val() + '').show();
+                }
+                //
+                $('#saveName').hide();
+                $('#delName').hide();
+                $('#addTab').show();
+
+                //CreateCkEditor();
+            }
+            return false;
+        });
+
+        $('#ListName').change(function () {
+            desployCkeditor();
+            var item = $('#ListName').val();
+            $('#Display-Tabs').find('h4').each(function () {
+                //$('#cke_' + this.attr('id')).hide();
+                $(this).hide();
+            });
+            $('#Display-Tabs').find('div.price-tabtour').each(function () {
+                //$('#cke_' + this.attr('id')).hide();
+                $(this).hide();
+            });
+            $('div#divprice_' + item + '').show();
+            $('#Content_' + item + ' ').show();
+            $('#' + 'TabTours_' + item + '__Content').show();
+            CKEDITOR.replace('TabTours_' + item + '__Content', {
+                height: '400px',
+                toolbar: [
+                    { name: 'document', groups: ['mode', 'document', 'doctools'], items: ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates'] },
+                    { name: 'clipboard', groups: ['clipboard', 'undo'], items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+                    { name: 'editing', groups: ['find', 'selection', 'spellchecker'], items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+                    { name: 'forms', items: ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'] },
+                    '/',
+                    { name: 'basicstyles', groups: ['basicstyles', 'cleanup'], items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+                    { name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi'], items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language'] },
+                    { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+                    { name: 'insert', items: ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe'] },
+                    '/',
+                    { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+                    { name: 'colors', items: ['TextColor', 'BGColor'] },
+                    { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+                    { name: 'others', items: ['-'] },
+                    { name: 'about', items: ['About'] }
+                ]
+            });
+
+        });
+    }
+
+    function changeNameTag2() {
+        $('#ListName2').unbind();
+        $('#changeName2').unbind();
+        $('#saveName2').unbind();
+        $('#delName2').unbind();
+
+        if ($('#ListName2').val() != "") {
+            $('#changeName2').show();
+        }
+
+        $('#changeName2').click(function () {
+            $('#tabName2').val($('#ListName2').find(":selected").text());
+            $('#addTab2').hide();
+            $('#saveName2').show();
+            $('#delName2').show();
+
+        });
+        $('#saveName2').click(function () {
+            $('#ListName2').find(":selected").text($('#tabName2').val());
+            $('#saveName2').hide();
+            $('#delName2').hide();
+            $('#addTab2').show();
+            //change value
+
+            $('#TabHotels_' + $('#ListName2').val() + '__TitleTab').val($('#tabName2').val());
+            $('#Price2_' + $('#ListName2').val()).text('Giá :' + $('#tabName2').val());
+            $('#Content2_' + $('#ListName2').val()).text('Nội dung lịch trình :' + $('#tabName2').val());
+
+            //
+            $('#tabName2').val("");
+        });
+        $('#delName2').click(function () {
+            if (confirm("Are you sure?")) {
+                // your deletion code
+                //TabTours_[0]__Name
+                $('#TabHotels_' + $('#ListName2').val() + '__Content').parent().remove();
+                $('#TabHotels_' + $('#ListName2').val() + '__TitleTab').remove();
+                $('#divprice2_' + $('#ListName2').val() + '').remove();
+                $('#Content2_' + $('#ListName2').val() + ' ').remove();
+
+                $('#cke_TabHotels_' + $('#ListName2').val() + '__Content').remove();
+
+                //
+                $('#ListName2').find(":selected").remove();
+                sapxepListName2();
+                sapxepTab2();
+                $('#tabName2').val("");
+                //
+                if ($('#ListName2').val() != null) {
+
+                    CKEDITOR.replace('TabHotels_' + $('#ListName2').val() + '__Content', {
+                        height: '300px',
+                        toolbar: [
+                            { name: 'document', groups: ['mode', 'document', 'doctools'], items: ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates'] },
+                            { name: 'clipboard', groups: ['clipboard', 'undo'], items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+                            { name: 'editing', groups: ['find', 'selection', 'spellchecker'], items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+                            { name: 'forms', items: ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'] },
+                            '/',
+                            { name: 'basicstyles', groups: ['basicstyles', 'cleanup'], items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+                            { name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi'], items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language'] },
+                            { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+                            { name: 'insert', items: ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe'] },
+                            '/',
+                            { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+                            { name: 'colors', items: ['TextColor', 'BGColor'] },
+                            { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+                            { name: 'others', items: ['-'] },
+                            { name: 'about', items: ['About'] }
+                        ]
+                    });
+                    $('#Content2_' + $('#ListName2').val() + ' ').show();
+                    $('#divprice2_' + $('#ListName2').val() + '').show();
+                }
+                //
+                $('#saveName2').hide();
+                $('#delName2').hide();
+                $('#addTab2').show();
+
+                //CreateCkEditor();
+            }
+            return false;
+        });
+
+        $('#ListName2').change(function () {
+            desployCkeditor2();
+            var item = $('#ListName2').val();
+            $('#Display-Tabs2').find('h4').each(function () {
+                //$('#cke_' + this.attr('id')).hide();
+                $(this).hide();
+            });
+            $('#Display-Tabs2').find('div.price-tabtour2').each(function () {
+                //$('#cke_' + this.attr('id')).hide();
+                $(this).hide();
+            });
+            $('div#divprice2_' + item + '').show();
+            $('#Content2_' + item + ' ').show();
+            $('#' + 'TabHotels_' + item + '__Content').show();
+            CKEDITOR.replace('TabHotels_' + item + '__Content', {
+                height: '300px',
+                toolbar: [
+                    { name: 'document', groups: ['mode', 'document', 'doctools'], items: ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates'] },
+                    { name: 'clipboard', groups: ['clipboard', 'undo'], items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+                    { name: 'editing', groups: ['find', 'selection', 'spellchecker'], items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+                    { name: 'forms', items: ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'] },
+                    '/',
+                    { name: 'basicstyles', groups: ['basicstyles', 'cleanup'], items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+                    { name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi'], items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language'] },
+                    { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+                    { name: 'insert', items: ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe'] },
+                    '/',
+                    { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+                    { name: 'colors', items: ['TextColor', 'BGColor'] },
+                    { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+                    { name: 'others', items: ['-'] },
+                    { name: 'about', items: ['About'] }
+                ]
+            });
+
+        });
+    }
+
+
+    function desployCkeditor() {
+        var editors = $("textarea");
+        if (editors.length) {
+            editors.each(function () {
+                var instance = CKEDITOR.instances[$(this).attr("id")];
+                if (instance && $(this).attr("id") != 'Description' && $(this).attr("id") != 'TourIncluded' && $(this).attr("id") != 'TourExcluded') {
+                    instance.destroy(true);
+                    $(this).val(instance.getData());
+                    $(this).hide();
+                }
+            });
+        }
+    }
+
+    function desployCkeditor2() {
+        var editors = $("textarea");
+        if (editors.length) {
+            editors.each(function () {
+                var instance = CKEDITOR.instances[$(this).attr("id")];
+                if (instance && $(this).attr("id") != 'Description' && $(this).attr("id") != 'TourIncluded' && $(this).attr("id") != 'TourExcluded') {
+                    instance.destroy(true);
+                    $(this).val(instance.getData());
+                    $(this).hide();
+                }
+            });
+        }
+    }
+
+    function sapxepListName() {
+        var temp = 0;
+        $("#ListName option").each(function () {
+            var value = $(this).attr("value");
+            var valuereplace = value.replace(value, temp);
+            $(this).attr("value", valuereplace);
+            temp++;
+        });
+    }
+
+    function sapxepListName2() {
+        var temp = 0;
+        $("#ListName2 option").each(function () {
+            var value = $(this).attr("value");
+            var valuereplace = value.replace(value, temp);
+            $(this).attr("value", valuereplace);
+            temp++;
+        });
+    }
+
+    function sapxepTab() {
+
+        var temp = 0;
+        $("#Display-Tabs label").each(function () {
+            var id = $(this).attr("id");
+            var abc = id.substring(id.indexOf('_') + 1, id.length);
+            var idreplace = id.replace(abc, temp);
+            $(this).attr("id", idreplace);
+            temp++;
+        });
+        temp = 0;
+        $("#Display-Tabs textarea").each(function () {
+            var id = $(this).attr("id");
+            var name = $(this).attr("name");
+            var abc = name.substring(name.indexOf('[') + 1, name.indexOf(']'));
+            //console.log('name: ' + name + ' and : ' + abc);
+            var idreplace = id.replace(abc, temp);
+            var namereplace = name.replace(abc, temp);
+            $(this).attr("id", idreplace);
+            $(this).attr("name", namereplace);
+            temp++;
+        });
+        temp = 0;
+        $("#Display-Tabs input.title-tab").each(function () {
+            var id = $(this).attr("id");
+            var name = $(this).attr("name");
+            var abc = name.substring(name.indexOf('[') + 1, name.indexOf(']'));
+            //console.log('name: ' + name + ' and : ' + abc);
+            var idreplace = id.replace(abc, temp);
+            var namereplace = name.replace(abc, temp);
+            $(this).attr("id", idreplace);
+            $(this).attr("name", namereplace);
+
+            temp++;
+        });
+        temp = 0;
+
+        $("#Display-Tabs input.price-tab").each(function () {
+            var id = $(this).attr("id");
+            var name = $(this).attr("name");
+            var abc = name.substring(name.indexOf('[') + 1, name.indexOf(']'));
+            //console.log('name: ' + name + ' and : ' + abc);
+            var idreplace = id.replace(abc, temp);
+            var namereplace = name.replace(abc, temp);
+            $(this).attr("id", idreplace);
+            $(this).attr("name", namereplace);
+
+            temp++;
+        });
+        temp = 0;
+    }
+
+
+    function sapxepTab2() {
+
+        var temp = 0;
+        $("#Display-Tabs2 label").each(function () {
+            var id = $(this).attr("id");
+            var abc = id.substring(id.indexOf('_') + 1, id.length);
+            var idreplace = id.replace(abc, temp);
+            $(this).attr("id", idreplace);
+            temp++;
+        });
+        temp = 0;
+        $("#Display-Tabs2 textarea").each(function () {
+            var id = $(this).attr("id");
+            var name = $(this).attr("name");
+            var abc = name.substring(name.indexOf('[') + 1, name.indexOf(']'));
+            //console.log('name: ' + name + ' and : ' + abc);
+            var idreplace = id.replace(abc, temp);
+            var namereplace = name.replace(abc, temp);
+            $(this).attr("id", idreplace);
+            $(this).attr("name", namereplace);
+            temp++;
+        });
+        temp = 0;
+        $("#Display-Tabs2 input.title-tab").each(function () {
+            var id = $(this).attr("id");
+            var name = $(this).attr("name");
+            var abc = name.substring(name.indexOf('[') + 1, name.indexOf(']'));
+            //console.log('name: ' + name + ' and : ' + abc);
+            var idreplace = id.replace(abc, temp);
+            var namereplace = name.replace(abc, temp);
+            $(this).attr("id", idreplace);
+            $(this).attr("name", namereplace);
+
+            temp++;
+        });
+        temp = 0;
+
+        $("#Display-Tabs2 input.price-tab").each(function () {
+            var id = $(this).attr("id");
+            var name = $(this).attr("name");
+            var abc = name.substring(name.indexOf('[') + 1, name.indexOf(']'));
+            //console.log('name: ' + name + ' and : ' + abc);
+            var idreplace = id.replace(abc, temp);
+            var namereplace = name.replace(abc, temp);
+            $(this).attr("id", idreplace);
+            $(this).attr("name", namereplace);
+
+            temp++;
+        });
+        temp = 0;
+    }
+
+    function bindRightClick() {
+        $('.allImage li').unbind();
+        $('.allImage li').bind('contextmenu', function (e) {
+            $('#context-menu').css('left', e.pageX + 'px');
+            $('#context-menu').css('top', e.pageY + 'px');
+            $('#context-menu').show();
+            e.preventDefault();
+            curentImg = $(this);
+            return false;
+        });
+    }
+    //function bindRightClick() {
+    //    $('.allImage li').unbind();
+    //    $('.allImage li').bind('contextmenu', function (e) {
+    //        $('#context-menu').css('left', e.pageX + 'px');
+    //        $('#context-menu').css('top', e.pageY + 'px');
+    //        $('#context-menu').show();
+    //        e.preventDefault();
+    //        curentImg = $(this);
+    //        return false;
+    //    });
+    //}
+
+    function sapxep() {
+        var temp = 0;
+        $(".allImage li").each(function () {
+            $(this).find('input').each(function () {
+                var id = $(this).attr("id");
+                var name = $(this).attr("name");
+                var abc = name.substring(name.indexOf('[') + 1, name.indexOf(']'));
+                //console.log('name: ' + name + ' and : ' + abc);
+                var idreplace = id.replace(abc, temp);
+                var namereplace = name.replace(abc, temp);
+                $(this).attr("id", idreplace);
+                $(this).attr("name", namereplace);
+            });
+            temp++;
+        });
+        bindRightClick();
+    }
+
+    function loadHtmlForImage(val) {
+        if ($('#EGalleryITems_' + val + '__Image').length > 0) {
+            return loadHtmlForImage(++val);
+        } else {
+            //console.log(val);
+            var image = '<input id="EGalleryITems_' + val + '__Image" name="EGalleryITems[' + val + '].Image" type="hidden" value="' + $('#img-thumb').val() + '"/>';
+            var title = '<input id="EGalleryITems_' + val + '__Title" name="EGalleryITems[' + val + '].Title" type="hidden" value="' + $('#img-title').val() + '"/>';
+            var img = '<img src="' + $('#img-thumb').val() + '" width="100" height="80" /><label>' + $('#img-title').val() + '</label>';
+            return ('<li>' + image + title + img + '</li>');
+        }
+    }
+    $('#addTab').click(function () {
+        changeNameTag();
+        if ($('#tabName').val() == "") {
+            alert('Please enter name tab tour');
+            $('#tabName').focus();
+        } else if (checkValidate($('#tabName').val())) {
+            alert("Name tab tour is exist");
+        } else {
+            var counts = $("#ListName option").length;
+            var inputPrice = "<div id= 'divprice_" + counts + "' class='price-tabtour'><strong>Price: </strong><input type='text' id= 'TabTours_" + counts + "__Price' name='TabTours[" + counts + "].Price' class='span1 price-tab' value='0'/></div>";
+            var label = '<h4 id="Content_' + counts + '">Content Tab Tour : ' + $('#tabName').val() + '</h4>';
+            var textarea = '<input type="hidden" class="title-tab" id="TabTours_' + counts + '__TitleTab" name="TabTours[' + counts + '].TitleTab" value="' + $('#tabName').val() + '"/></div>' +
+                '<div style="clear: both"><textarea id="TabTours_' + counts + '__Content" name="TabTours[' + counts + '].Content" rows="20" class="full-ckeditor"></textarea>';
+            var html = '<option  value="' + counts + '">' + $('#tabName').val() + ' </option>';
+            $('#ListName').append(html);
+            $('#ListName').show();
+            $('#ListName').val(counts);
+            desployCkeditor();
+            $('#Display-Tabs').find('h4').each(function () {
+                //$('#cke_' + this.attr('id')).hide();
+                $(this).hide();
+            });
+            $('#Display-Tabs').find('div.price-tabtour').each(function () {
+                //$('#cke_' + this.attr('id')).hide();
+                $(this).hide();
+            });
+            $('#Display-Tabs').append(inputPrice + label + textarea);
+
+
+            $('#tabName').val("");
+            sapxepListName();
+            sapxepTab();
+            var value = $("#ListName option").last().attr("value");
+            CKEDITOR.replace('TabTours_' + value + '__Content', {
+                height: '300px',
+                toolbar: [
+                    { name: 'document', groups: ['mode', 'document', 'doctools'], items: ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates'] },
+                    { name: 'clipboard', groups: ['clipboard', 'undo'], items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+                    { name: 'editing', groups: ['find', 'selection', 'spellchecker'], items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+                    { name: 'forms', items: ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'] },
+                    '/',
+                    { name: 'basicstyles', groups: ['basicstyles', 'cleanup'], items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+                    { name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi'], items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language'] },
+                    { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+                    { name: 'insert', items: ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe'] },
+                    '/',
+                    { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+                    { name: 'colors', items: ['TextColor', 'BGColor'] },
+                    { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+                    { name: 'others', items: ['-'] },
+                    { name: 'about', items: ['About'] }
+                ]
+            });
+        }
+    });
+
+    $('#addTab2').click(function () {
+        changeNameTag2();
+        if ($('#tabName2').val() == "") {
+            alert('Please enter name tab tour');
+            $('#tabName2').focus();
+        } else if (checkValidate($('#tabName2').val())) {
+            alert("Name tab tour is exist");
+        } else {
+            var counts = $("#ListName2 option").length;
+            var inputPrice = "<div id= 'divprice2_" + counts + "' class='price-tabtour'><strong>Price: </strong><input type='text' id= 'TabHotels_" + counts + "__Price' name='TabHotels[" + counts + "].Price' class='span1 price-tab' value='0'/></div>";
+            var label = '<h4 id="Content2_' + counts + '">Content Tab Tour : ' + $('#tabName2').val() + '</h4>';
+            var textarea = '<input type="hidden" class="title-tab" id="TabHotels_' + counts + '__TitleTab" name="TabHotels[' + counts + '].TitleTabHotel" value="' + $('#tabName2').val() + '"/></div>' +
+                '<div style="clear: both"><textarea id="TabHotels_' + counts + '__Content" name="TabHotels[' + counts + '].ContentHotel" rows="20" class="full-ckeditor"></textarea>';
+            var html = '<option  value="' + counts + '">' + $('#tabName2').val() + ' </option>';
+            $('#ListName2').append(html);
+            $('#ListName2').show();
+            $('#ListName2').val(counts);
+            desployCkeditor();
+            $('#Display-Tabs2').find('h4').each(function () {
+                //$('#cke_' + this.attr('id')).hide();
+                $(this).hide();
+            });
+            $('#Display-Tabs2').find('div.price-tabtour').each(function () {
+                //$('#cke_' + this.attr('id')).hide();
+                $(this).hide();
+            });
+            $('#Display-Tabs2').append(label + textarea);
+
+
+            $('#tabName2').val("");
+            sapxepListName();
+            sapxepTab();
+            var value = $("#ListName2 option").last().attr("value");
+            CKEDITOR.replace('TabHotels_' + value + '__Content', {
+                height: '300px',
+                toolbar: [
+                    { name: 'document', groups: ['mode', 'document', 'doctools'], items: ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates'] },
+                    { name: 'clipboard', groups: ['clipboard', 'undo'], items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+                    { name: 'editing', groups: ['find', 'selection', 'spellchecker'], items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+                    { name: 'forms', items: ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'] },
+                    '/',
+                    { name: 'basicstyles', groups: ['basicstyles', 'cleanup'], items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+                    { name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi'], items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language'] },
+                    { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+                    { name: 'insert', items: ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe'] },
+                    '/',
+                    { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+                    { name: 'colors', items: ['TextColor', 'BGColor'] },
+                    { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+                    { name: 'others', items: ['-'] },
+                    { name: 'about', items: ['About'] }
+                ]
+            });
+        }
+    });
+    if ($("#Deal").val() == 'False') {
+        $(".w-time-deal").hide();
+    } else {
+        $(".w-time-deal").show();
+    }
+    $("#Deal").change(function () {
+        if ($("#Deal").val() == 'False') {
+            $(".w-time-deal").hide();
+        } else {
+            $(".w-time-deal").show();
+        }
+    });
+    $("#StartDeal").datepicker({
+        minDate: new Date(),
+    });
+
+    function checkValidate(value) {
+        var f = false;
+        $('#Display-Tabs').find('input').each(function () {
+            if ($(this).val() == value) {
+                f = true;
+            }
+        });
+        return f;
+    }
+    $('html').click(function (e) {
+        $('#context-menu').hide();
+    });
+    $('#context-menu').click(function (e) {
+        e.stopPropagation();
+        $(curentImg).remove();
+        sapxep();
+        $('#context-menu').hide(100);
+    });
+    $(window).resize(function () {
+        $('#context-menu').hide();
+    });
+    //Thêm ảnh
+    $('#add').click(function () {
+        if ($('#img').val() == "") {
+            alert("Xin vui lòng chọn ảnh");
+        } else {
+            var data = '';
+            while (true) {
+                if ($('#EGalleryITems_0__Image').length == 0) {
+                    data = loadHtmlForImage(0);
+                    count = 1;
+                } else {
+                    data = loadHtmlForImage(count++);
+                }
+                break;
+            }
+            $('.allImage').append(data);
+            sapxep();
+            bindRightClick();
+            $('#img-title').val('');
+            $('#img-thumb').val('');
+            $('#img').val('');
+        }
+
+    });
+    $(document).ready(function () {
+        $('#Theme').multiselect();
+        desployCkeditor();
+        CreateCkEditor();
+        changeNameTag();
+        changeNameTag2();
+        bindUl();
+        bindRightClick();
+        if ($('#ListName').val() == null) {
+            $('#ListName').hide();
+        } else {
+            $('#ListName').show();
+        }
+
+        if ($('#ListName2').val() == null) {
+            $('#ListName2').hide();
+        } else {
+            $('#ListName2').show();
+        }
+
+        AutoAlias('Title', 'Alias');
+
+    });
+
+</script>
+<style>
+    h4 {
+        margin: 10px 0px;
+    }
+</style>

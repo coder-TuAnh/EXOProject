@@ -1,0 +1,109 @@
+﻿@using ProjectLibrary.Database
+@using TeamplateHotel.Handler
+@using TeamplateHotel.Controllers
+@using TeamplateHotel.Models
+@using PagedList.Mvc
+@model  IEnumerable<Article>
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    Menu menu = ViewBag.Menu ?? new Menu();
+    //int i = 1;
+    string lan = Request.Cookies["LanguageID"].Value;
+    var detailHotel = CommentController.DetailHotel(lan);
+    List<ShowObject> acticelhot = CommentController.HotArticles(lan , menu.ID);
+}
+
+
+<div class="sub-nav">
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <h1 class="h1-title-d">
+                    @menu.Title
+                </h1>
+            </div>
+
+            
+            <!-- Sub Nav Links -->
+            <nav class="navbar-collapse collapse" id="navbar-sub">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://swallowtravel.com/@menu.Alias"><i class="fa fa-facebook"></i><span class="hidden-md hidden-lg">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://twitter.com/share?url=http://swallowtravel.com/@menu.Alias"><i class="fa fa-twitter"></i><span class="hidden-md hidden-lg">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://plus.google.com/share?url=http://swallowtravel.com/@menu.Alias"><i class="fa fa-google-plus"></i><span class="hidden-md hidden-lg">Google +</span></a>
+                    </li>
+                    <li><a target="_blank" href="mailto:@detailHotel.Email"><i class="fa fa-envelope-o"></i> <span class="hidden-md hidden-lg">Email</span></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+<section class="regular" style="padding-top: 4rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="/" class="text-success">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="/@menu.Alias" class="text-success">@menu.Title</a>
+                    </li>
+
+                </ol>
+            </div>
+
+            <div class="col-lg-9">
+                @foreach (var item0 in acticelhot)
+                {
+                    <div class="item-content">
+                        <div class="col-md-4">
+                            <a href="/@item0.MenuAlias/@item0.ID/@item0.Alias" title="@item0.Title">
+                                <img src="@item0.Image" alt="@item0.Title" style="width: 100%;" class="img-border" />
+                            </a>
+                            @*<span style="position:absolute; left: 238px">
+                                <img src="~/Files/icon-hot.gif" style="width: 45px;"/>
+                            </span>*@
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="title-content">
+                                <a href="/@item0.MenuAlias/@item0.ID/@item0.Alias" title="@item0.Title">@item0.Title</a>
+                            </h3>
+                            @Html.Raw(item0.Description)
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                }
+
+                @foreach (var item in Model)
+                {
+                    <div class="item-content">
+                        <div class="col-md-4">
+                            <a href="/@item.MenuAlias/@item.ID/@item.Alias" title="@item.Title">
+                                <img src="@item.Image" alt="@item.Title" style="width: 100%;" class="img-border" />
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="title-content">
+                                <a href="/@item.MenuAlias/@item.ID/@item.Alias" title="@item.Title">@item.Title</a>
+                            </h3>
+                            @Html.Raw(item.Description)
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-3">
+                @Html.Partial("SideBar")
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</section>
+

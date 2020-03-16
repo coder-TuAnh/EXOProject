@@ -1,0 +1,214 @@
+﻿@using ProjectLibrary.Database
+@using TeamplateHotel.Controllers
+@using TeamplateHotel.Handler
+@model IEnumerable<Contact>
+@{
+    string lan = Request.Cookies["LanguageID"].Value;
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    var hotel = CommentController.DetailHotel(Request.Cookies["LanguageID"].Value);
+    Menu menu = ViewBag.Menu ?? new Menu();
+}
+<script src="/Scripts/jquery-1.10.2.min.js"></script>
+<script src="/Scripts/intlTelInput.js"></script>
+<link href="~/Plugins/Validate/jquery-validation-1.13.1/jquery-validation.css" rel="stylesheet" />
+<link href="~/Content/Css/intlTelInput.css" rel="stylesheet" />
+<script src="~/Plugins/Validate/jquery-validation-1.13.1/jquery.validate.min.js"></script>
+<script src="~/Plugins/Validate/jquery-validation-1.13.1/additional-methods.min.js"></script>
+
+<div class="sub-nav">
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <h1 class="h1-title-d">
+                    @menu.Title
+                </h1>
+            </div>
+            <!-- Sub Nav Links -->
+            <nav class="navbar-collapse collapse" id="navbar-sub">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://viator.com.sg/@menu.Alias"><i class="fa fa-facebook"></i><span class="hidden-md hidden-lg">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://twitter.com/share?url=http://viator.com.sg/@menu.Alias"><i class="fa fa-twitter"></i><span class="hidden-md hidden-lg">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://plus.google.com/share?url=http://viator.com.sg/@menu.Alias"><i class="fa fa-google-plus"></i><span class="hidden-md hidden-lg">Google +</span></a>
+                    </li>
+                    <li><a target="_blank" href="mailto:@hotel.Email"><i class="fa fa-envelope-o"></i> <span class="hidden-md hidden-lg">Email</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<section class="regular" style="padding-top: 4rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <form action="/Contact/SubmitContact" method="POST" id="contactform" class="form-horizontal">
+                    <div id="contact-div">
+                        <strong>We'd love to hear from you!</strong><br />
+                        <p>
+                            <span>
+                               @GetLanguage.Language(lan , "Contactus1")
+                            </span>
+                            <a href="mailto:@hotel.Email">@hotel.Email</a>
+                            <span>
+                                @GetLanguage.Language(lan, "Contactus2")
+                            </span>
+                            
+                        </p>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="form-group">
+                        <label for="FullName" class="col-sm-2 control-label">@GetLanguage.Language(lan, "FullName")<span class="required">*</span></label>
+                        <div class="col-sm-7">
+                            <input type="text" name="FullName" id="FullName" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Tel" class="col-sm-2 control-label">@GetLanguage.Language(lan, "PhoneNumber")</label>
+                        <div class="col-sm-7">
+                            <input type="tel" name="Tel" id="Tel" style="background: #f5f6f6; border: 1px solid #e9eaeb; border-radius: 3px;">
+                            <span id="valid-msg" class="hide" style="color: #5ad203">✓ Valid</span>
+                            <span id="error-msg" class="hide" style="color: red"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email" class="col-sm-2 control-label">@GetLanguage.Language(lan, "Email")<span class="required">*</span></label>
+                        <div class="col-sm-7">
+                            <input type="text" name="Email" id="Email" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Title" class="col-sm-2 control-label">@GetLanguage.Language(lan, "Subject")<span class="required">*</span></label>
+                        <div class="col-sm-7">
+                            <input type="text" name="Subject" id="Subject" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Content" class="col-sm-2 control-label">@GetLanguage.Language(lan, "Messages")<span class="required">*</span></label>
+                        <div class="col-sm-7">
+                            <textarea name="Request" id="Request" style="height: 120px; white-space: pre;"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <input type="submit" value="@GetLanguage.Language(lan, "Sendmessage")" class="button-anchor btn-book" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3">
+                @Html.Partial("SideBar")
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="wraploadding">
+    <div id="imgloadding"><img src="/Areas/Administrator/Content/img/ajax-loader.gif" alt="loading" /></div>
+</div>
+
+<style>
+    .content-container-anchor img {
+        max-width: none;
+    }
+
+    #contact-div {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+    }
+</style>
+<script type="text/javascript">
+    function LoadingSendEmail() {
+        $("#wraploadding").show();
+        $("#wraploadding").css("width", $(window).width());
+        $("#wraploadding").css("height", $(window).height());
+        $("#imgloadding ").css("top", ($(window).height() / 2) - 80);
+    }
+    //validate
+    jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+    });
+    $("#contactform").validate({
+        rules: {
+            'FullName': {
+                required: true,
+            },
+            'Tel': {
+                required: true,
+            },
+            'Email': {
+                required: true,
+                email: true
+            },
+            'Title': {
+                required: true,
+            },
+            'Content': {
+                required: true,
+            },
+        },
+        messages: {
+            'FullName': "Please enter First Name",
+            'Tel': "Please enter Tel",
+            'Email': "Please enter Email Adress",
+            'Title': "Please enter Title",
+            'Content': "Please enter Content",
+        },
+        submitHandler: function (form) {
+            form.submit();
+            LoadingSendEmail();
+        }
+    });
+</script>
+
+<script>
+    //var input = document.querySelector("#phone");
+    //intlTelInput(input, {
+    //    utilsScript: "/Scripts/utils.js"
+    //});
+    var input = document.querySelector("#Tel"),
+        errorMsg = document.querySelector("#error-msg"),
+        validMsg = document.querySelector("#valid-msg");
+
+    // Error messages based on the code returned from getValidationError
+    var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+
+    // Initialise plugin
+    var intl = window.intlTelInput(input, {
+        utilsScript: "/Scripts/utils.js"
+    });
+
+    var reset = function () {
+        input.classList.remove("error");
+        errorMsg.innerHTML = "";
+        errorMsg.classList.add("hide");
+        validMsg.classList.add("hide");
+    };
+
+    // Validate on blur event
+    input.addEventListener('blur', function () {
+        reset();
+        if (input.value.trim()) {
+            if (intl.isValidNumber()) {
+                validMsg.classList.remove("hide");
+            } else {
+                input.classList.add("error");
+                var errorCode = intl.getValidationError();
+                errorMsg.innerHTML = errorMap[errorCode];
+                errorMsg.classList.remove("hide");
+            }
+        }
+    });
+
+    // Reset on keyup/change event
+    input.addEventListener('change', reset);
+    input.addEventListener('keyup', reset);
+</script>

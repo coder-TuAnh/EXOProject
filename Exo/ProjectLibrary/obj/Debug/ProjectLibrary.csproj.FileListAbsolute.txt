@@ -1,0 +1,92 @@
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll.config
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.pdb
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.dll
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.xml
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csprojResolveAssemblyReference.cache
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CoreCompileInputs.cache
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CopyComplete
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.dll
+D:\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.pdb
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll.config
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.pdb
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csprojAssemblyReference.cache
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CoreCompileInputs.cache
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CopyComplete
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.dll
+D:\Change\Swl\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.pdb
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll.config
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.pdb
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.xml
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CoreCompileInputs.cache
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CopyComplete
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.dll
+F:\Test\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.pdb
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll.config
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.pdb
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csprojAssemblyReference.cache
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CopyComplete
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.dll
+C:\Users\admin\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.pdb
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll.config
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.pdb
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.xml
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csprojAssemblyReference.cache
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CoreCompileInputs.cache
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CopyComplete
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.dll
+G:\Documents\swallowtravel\swallow travel phuc\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.pdb
+D:\IIT\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll.config
+D:\IIT\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.pdb
+D:\IIT\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\IIT\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csprojAssemblyReference.cache
+D:\IIT\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CopyComplete
+D:\IIT\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.dll
+D:\IIT\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.pdb
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll.config
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.pdb
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csprojAssemblyReference.cache
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CopyComplete
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.dll
+C:\Users\admin\OneDrive\Máy tính\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.pdb
+B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll.config
+B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.dll
+B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\ProjectLibrary.pdb
+B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.dll
+B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.dll
+B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.xml
+B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.xml
+B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csprojAssemblyReference.cache
+B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CopyComplete
+B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.dll
+B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.pdb

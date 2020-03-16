@@ -1,0 +1,39 @@
+﻿@using ProjectLibrary.Database
+@using ProjectLibrary.Utility
+@using TeamplateHotel.Controllers
+@using TeamplateHotel.Handler
+@using TeamplateHotel.Models
+@{
+    Hotel company = CommentController.DetailHotel(Request.Cookies["LanguageID"].Value);
+}
+<div class="wrap_baner_us">
+    <div class="container">
+        <div class="title">
+            We know you are unique, so we're here to create unique experiences for you
+        </div>
+        <div class="wrap_list_us">
+            <div class="row">
+                <div class="col-lg-9 margin_auto">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="~/Content/img/tour/icon-1.png" width="50">
+                            <p>Contact us</p>
+                            <span class="lik">Call Us: <a href="tel:@company.Tel" title="">@company.Tel</a></span>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="~/Content/img/tour/icon-2.png" width="50">
+                            <p>Contact us</p>
+                            <span class="lik"><a href="" title="">Send Enquiry</a></span>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="~/Content/img/tour/icon-1.png" width="50">
+                            <p>Mail Us</p>
+                            <span class="lik"><a href="mailto:@company.Email" title="">@company.Email</a></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

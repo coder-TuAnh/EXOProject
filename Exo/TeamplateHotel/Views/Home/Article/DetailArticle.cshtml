@@ -1,0 +1,132 @@
+﻿@using ProjectLibrary.Database
+@using TeamplateHotel.Handler
+@using TeamplateHotel.Controllers
+@using TeamplateHotel.Models
+@model TeamplateHotel.Models.DetailArticle
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    string lan = Request.Cookies["LanguageID"].Value;
+    var hotel = CommentController.DetailHotel(Request.Cookies["LanguageID"].Value);
+    Menu menu = ViewBag.Menu ?? new Menu();
+    List<ShowObject> acticelhot = CommentController.HotArticles(lan, menu.ID);
+    List<TabArticle> tabArticles = CommentController.GetTapArticles();
+}
+<style>
+    .text_blog div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /*số dòng muốn hiện */
+        /*font-size: 12px; /*cỡ chữ, đơn vị px */ */ line-height: 1.5em; /* khoảng cách giữa các dòng, đơn vị em*/
+        max-height: 63px;
+    }
+     .text_blog p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /*số dòng muốn hiện */
+        /*font-size: 12px; /*cỡ chữ, đơn vị px */ */ line-height: 1.5em; /* khoảng cách giữa các dòng, đơn vị em*/
+        max-height: 63px;
+    }
+</style>
+<section class="body_">
+    <div class="container">
+        <div class="row">
+            <div class="breadcrumb_blogs">
+                <span><a href="">Home</a></span>
+                <span>></span>
+                <span><a href="blogs.html">Travel Blogs</a></span>
+                <span>></span>
+                <span>@Model.Article.Title</span>
+            </div>
+            <div class="col-md-9">
+                <div class="title_blogs">
+                    <h1>@Model.Article.Title</h1>
+                </div>
+                <div class="content_blogs">
+                    <i class="fa fa-clock-o"></i>
+                    <span>@DateTime.Now.ToString("dd/mm/yyyy")</span>
+                </div>
+                <div class="blog_post_mainn ">
+                    @Html.Raw(Model.Article.Content)
+                </div>
+                <div class="share">
+                    <ul>
+                        <li class="share_texxt">Share:</li>
+                        <li class="facebook_">
+                            <a href="">
+                                <i class="fa fa-facebook"></i>&nbsp;facebook
+                            </a>
+                        </li>
+                        <li class="twitter_"><a href=""><i class="fa fa-twitter"></i>&nbsp;Twitter</a></li>
+                    </ul>
+                </div>
+
+                <div class="view_top">
+                    <h5 class="text-center">You might also like</h5>
+                    <div class="row blog_home">
+                        @foreach (var item in acticelhot)
+                        {
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="blog_item">
+                                    <div class="img_blog">
+                                        <a href="/@item.MenuAlias/@item.ID/@item.Alias"><img src="@item.Image"></a>
+                                    </div>
+                                    <div class="text_blog">
+                                        <a href="/@item.MenuAlias/@item.ID/@item.Alias"><h3>@item.Title</h3></a>
+                                        
+                                            <span>@DateTime.Now.ToString("dd/mm/yyyy") </span>
+                                        
+                                        <p class="text_conten">@Html.Raw(item.Description) </p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-3">
+                <div class="wrapper_border">
+                    <div class="banner">
+                        <a href=""><img src="~/Content/img/blog/ba1.jpg"></a>
+                    </div>
+                    <h3 class="top_post">Latest posts</h3>
+                    <div class="top_viewPost">
+                        @foreach (var item in acticelhot)
+                        {
+                            <div class="item_view">
+                                <a href="/@item.MenuAlias/@item.ID/@item.Alias">
+                                    <img src="@item.Image">
+                                    <div class="text_view">
+                                        <h5>@item.Title</h5>
+                                        @DateTime.Now.ToString("dd/mm/yyyy")
+                                    </div>
+                                </a>
+                            </div>
+                        }
+                    </div>
+
+                    <h3 class="top_post">Top popular Tags</h3>
+                    <div class="tags">
+                        @foreach (var item in tabArticles)
+                        {
+                            <a href="">@item.Title</a>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@section scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/blogs.js"></script>
+}
+
