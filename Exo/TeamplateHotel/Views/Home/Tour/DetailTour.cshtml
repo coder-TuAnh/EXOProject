@@ -15,6 +15,7 @@
     int i = 0;
     int index = 0;
 }
+
 <section class="full-screen bg-tour">
     <div class="video-main ">
         <img src="~/Content/images/bg-tour-detail.jpg" alt="">
@@ -284,7 +285,7 @@
             </div>
             <div class="col-md-12 text-center">
                 <div class="row mg-bot-20">
-                    @foreach (var item in _tourLike)
+                    @foreach (var item in _tourLike.Take(3))
                     {
                         <div class="col-md-4 mg-bot-20">
                             <div class="thumbnail tout-detal-thb">

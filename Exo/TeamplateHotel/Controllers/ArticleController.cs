@@ -11,7 +11,11 @@ namespace TeamplateHotel.Controllers
 {
     public  class ArticleController : Controller
     {
-       
+        public ActionResult ListDestination()
+        {
+            return View();
+        }
+
         //public static ShowDetailArticle GetDetailArticle(Menu menu, int idArticle)
         //{
         //    using (var db = new MyDbDataContext())

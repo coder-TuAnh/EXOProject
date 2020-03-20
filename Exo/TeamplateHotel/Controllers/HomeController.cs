@@ -26,36 +26,37 @@ namespace TeamplateHotel.Controllers
                 return View("Index");
             }
 
-            //if (aliasMenuSub.ToString() == "Search")
-            //{
-            //    string key = Request.Params["key"];
-            //    if (string.IsNullOrEmpty(key))
-            //    {
-            //        return View("Tour/Search", new List<Tour>());
-            //    }
-            //    List<ShowObject> listSearch = new List<ShowObject>();
-            //    listSearch.AddRange(db.Tours.Where(a => a.Status && a.Title.Contains(key)).OrderBy(a => a.Index).Select(a => new ShowObject() {
-            //        ID = a.ID,
-            //        Alias = a.Alias,
-            //        Description = a.Description,
-            //        Image = a.Image,
-            //        Index = a.Index,
-            //        MenuAlias = a.Menu.Alias,
-            //        Title = a.Title,
-            //    }).ToList());
-            //    listSearch.AddRange(db.Articles.Where(a => a.Status && a.Title.Contains(key)).OrderBy(a => a.Index).Select(a => new ShowObject()
-            //    {
-            //        ID = a.ID,
-            //        Alias = a.Alias,
-            //        Description = a.Description,
-            //        Image = a.Image,
-            //        Index = a.Index,
-            //        MenuAlias = a.Menu.Alias,
-            //        Title = a.Title,
-            //    }).ToList());
+            if (aliasMenuSub.ToString() == "Search")
+            {
+                string key = Request.Params["key"];
+                if (string.IsNullOrEmpty(key))
+                {
+                    return View("Tour/Search", new List<Tour>());
+                }
+                List<ShowObject> listSearch = new List<ShowObject>();
+                listSearch.AddRange(db.Tours.Where(a => a.Status && a.Title.Contains(key)).OrderBy(a => a.Index).Select(a => new ShowObject()
+                {
+                    ID = a.ID,
+                    Alias = a.Alias,
+                    Description = a.Description,
+                    Image = a.Image,
+                    Index = a.Index,
+                    MenuAlias = a.Menu.Alias,
+                    Title = a.Title,
+                }).ToList());
+                listSearch.AddRange(db.Articles.Where(a => a.Status && a.Title.Contains(key)).OrderBy(a => a.Index).Select(a => new ShowObject()
+                {
+                    ID = a.ID,
+                    Alias = a.Alias,
+                    Description = a.Description,
+                    Image = a.Image,
+                    Index = a.Index,
+                    MenuAlias = a.Menu.Alias,
+                    Title = a.Title,
+                }).ToList());
 
-            //    return View("Tour/Search", listSearch);
-            //}
+                return View("Tour/Search", listSearch);
+            }
             if (aliasMenuSub.ToString() == "SelectLanguge")
             {
                 Language language = db.Languages.FirstOrDefault(a => a.ID == idSub.ToString());
@@ -118,7 +119,7 @@ namespace TeamplateHotel.Controllers
                 return View("Article/DetailArticle", detailArticle);
             }
             int pagenumber = page ?? 1;
-            int pagesize = pageSize ?? 9;
+            int pagesize = pageSize ?? 5;
             IPagedList<Article> list = articles.ToPagedList(pagenumber, pagesize);
             return View("Article/ListArticle", list);
 
@@ -150,9 +151,8 @@ namespace TeamplateHotel.Controllers
             #endregion "Kiếu tour"
         }
 
-        public ActionResult LisTour(string alias, object idSub, int? page)
+        public ActionResult LisTour(string alias,object idSub, int? page)
         {
-            var db = new MyDbDataContext();
             if (idSub.ToString() != "System.Object")
             {
                 int idTour;
@@ -198,6 +198,38 @@ namespace TeamplateHotel.Controllers
                 return View("Tour/SpecialTour", _list);
             }
         }
+        public ActionResult ListTourDes(string slug, string item, int? page, int? pageSize)
+        {
+            using (var db = new MyDbDataContext())
+            {
+                Menu menu = db.Menus.FirstOrDefault(x => x.Alias == slug);
+                ViewBag.slug = slug;
+                ViewBag.Menu = menu;
+                int pagenumber = page ?? 1;
+                int pagesize = pageSize ?? 9;
+                List<ShowObject> _listActivities = CommentController.GetTours(menu.ID);
+
+                switch (item)
+                {
+                    case "0":
+                        _listActivities = _listActivities.OrderBy(x => x.ID).ToList();
+                        break;
+                    case "1":
+                        _listActivities = _listActivities.OrderBy(x => x.Title).ToList();
+                        break;
+                    case "2":
+                        _listActivities = _listActivities.OrderByDescending(x => x.Title).ToList();
+                        break;
+                    default:
+                        break;
+                }
+                IPagedList<ShowObject> _list = _listActivities.ToPagedList(pagenumber, pagesize);
+
+                return View("Tour/SpecialTourDes", _list);
+            }
+        }
+      
+
 
     }
 }

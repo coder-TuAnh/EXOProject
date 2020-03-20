@@ -1,6 +1,4 @@
-﻿@using ProjectLibrary.Database
-@using TeamplateHotel.Handler
-@using TeamplateHotel.Controllers
+﻿@using TeamplateHotel.Controllers
 @using TeamplateHotel.Models
 @using PagedList.Mvc
 @using PagedList
@@ -8,11 +6,12 @@
 
 @{
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
-    Menu menu = ViewBag.Menu ?? new Menu();
+
     string lan = Request.Cookies["LanguageID"].Value;
     var company = CommentController.DetailHotel(lan);
     List<ShowObject> _tourHot = CommentController.Tourhots(lan);
 }
+
 <section class="full-screen bg-tour">
     <div class="video-main ">
         <img src="~/Content/images/bg-2.jpg" alt="">
@@ -28,14 +27,14 @@
             </p>
         </div>
         <div class="row mg-bt-40">
-            <div class="col-lg-4 col-md-6 group-view">
-                <div class="button-group layout-mode-button-group" id="btnContainer">
-                    <button class="btn-list-view bt-view" onclick="listView()"><i class="fas fa-list icon-view"></i>LIST VIEW</button>
-                    <button class="btn-grid-view bt-view active" onclick="gridView()"><i class="fas fa-th icon-view"></i>GRID VIEW</button>
-                </div>
-            </div>
+            @*<div class="col-lg-4 col-md-6 group-view">
+                    <div class="button-group layout-mode-button-group" id="btnContainer">
+                        <button class="btn-list-view bt-view" onclick="listView()"><i class="fas fa-list icon-view"></i>LIST VIEW</button>
+                        <button class="btn-grid-view bt-view active" onclick="gridView()"><i class="fas fa-th icon-view"></i>GRID VIEW</button>
+                    </div>
+                </div>*@
             <div class="col-lg-5 col-md-6 groug-results">
-                <div class="found"> <span class="font-16">RESULTS FOUND:</span><span class="green">@Model.Count()</span></div>
+                <div class="found"> <span class="font-16">RESULTS FOUND:</span><span class="green">@Model.Count</span></div>
                 <div class="view">
                     <span class="font-16">VIEW:</span>
                     <div class="dropdown">
@@ -88,7 +87,7 @@
                     <div class="border-radius-top">Search Tours</div>
                     <div class="filters-search search-box">
                         <i class="fas fa-search"></i>
-                        <input type="text" class="search-box" placeholder="Type Tour Name" title="Search">
+                        <input type="text" class="search-box" placeholder="Type Tour Name" title="Search" name="seach">
                     </div>
                 </div>
                 <div class="left-panel mg-bot-20">
@@ -161,8 +160,7 @@
                 </div>
             </div>
             <div class="col-lg-9 col-md-12" id="showdatahotelt">
-                @Html.Action("ListTours", "Home", new { slug = ViewBag.slug, page = ViewBag.page })
-                
+                @Html.Action("ListTourDes", "Home", new { slug = ViewBag.slug, page = ViewBag.page })
 
             </div>
         </div>

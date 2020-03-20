@@ -7084,6 +7084,8 @@ namespace ProjectLibrary.Database
 		
 		private string _Description;
 		
+		private string _Image_icon;
+		
 		private EntitySet<Article> _Articles;
 		
 		private EntitySet<Service> _Services;
@@ -7128,6 +7130,8 @@ namespace ProjectLibrary.Database
     partial void OnShowhomeChanged();
     partial void OnDescriptionChanging(string value);
     partial void OnDescriptionChanged();
+    partial void OnImage_iconChanging(string value);
+    partial void OnImage_iconChanged();
     #endregion
 		
 		public Menu()
@@ -7459,6 +7463,26 @@ namespace ProjectLibrary.Database
 					this._Description = value;
 					this.SendPropertyChanged("Description");
 					this.OnDescriptionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Image_icon", DbType="NVarChar(250)")]
+		public string Image_icon
+		{
+			get
+			{
+				return this._Image_icon;
+			}
+			set
+			{
+				if ((this._Image_icon != value))
+				{
+					this.OnImage_iconChanging(value);
+					this.SendPropertyChanging();
+					this._Image_icon = value;
+					this.SendPropertyChanged("Image_icon");
+					this.OnImage_iconChanged();
 				}
 			}
 		}

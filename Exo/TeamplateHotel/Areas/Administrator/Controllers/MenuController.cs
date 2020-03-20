@@ -125,6 +125,7 @@ namespace TeamplateHotel.Areas.Administrator.Controllers
                             Link = model.Link,
                             Description = model.Description,
                             Image = model.Image,
+                            Image_icon = model.Image_icon,
                             Showhome = model.Showhome,
                         };
                         db.Menus.InsertOnSubmit(menu);
@@ -171,6 +172,7 @@ namespace TeamplateHotel.Areas.Administrator.Controllers
                         Link = menu.Link,
                         Description = menu.Description,
                         Image = menu.Image,
+                        Image_icon = menu.Image_icon,
                         Showhome= menu.Showhome ?? false,
                     };
                     ListData();
@@ -232,6 +234,7 @@ namespace TeamplateHotel.Areas.Administrator.Controllers
                         edit.MetaDescription = string.IsNullOrEmpty(model.MetaDescription) ? model.Title : model.MetaDescription;
                         edit.Link = model.Link;
                         edit.Image = model.Image;
+                        edit.Image_icon = model.Image_icon;
                         edit.Description = model.Description;
                         edit.Showhome = model.Showhome;
                         db.SubmitChanges();

@@ -11,122 +11,175 @@
     List<ShowObject> acticelhot = CommentController.HotArticles(lan, menu.ID);
     List<TabArticle> tabArticles = CommentController.GetTapArticles();
 }
-<style>
-    .text_blog div {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3; /*số dòng muốn hiện */
-        /*font-size: 12px; /*cỡ chữ, đơn vị px */ */ line-height: 1.5em; /* khoảng cách giữa các dòng, đơn vị em*/
-        max-height: 63px;
-    }
-     .text_blog p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3; /*số dòng muốn hiện */
-        /*font-size: 12px; /*cỡ chữ, đơn vị px */ */ line-height: 1.5em; /* khoảng cách giữa các dòng, đơn vị em*/
-        max-height: 63px;
-    }
-</style>
-<section class="body_">
+<!-- main -->
+<section class="title_blog_detail">
+    <div class="wrap_blog">
+        <div class="blog_thumb">
+            <div class="title_blog">
+                <span>
+                    <a href="" class="post_title" title="">EXO NEWS,</a>
+                    <a href="" class="post_title" title=""> EXO PEOPLE, </a>
+                    <a href="" class="post_title" title="">, RESPONSIBLE & SUSTAINABLE</a>
+                </span>
+                <h1>@Model.Article.Title</h1>
+                <span>@DateTime.Now.ToLongDateString()</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section -->
+<section>
     <div class="container">
         <div class="row">
-            <div class="breadcrumb_blogs">
-                <span><a href="">Home</a></span>
-                <span>></span>
-                <span><a href="blogs.html">Travel Blogs</a></span>
-                <span>></span>
-                <span>@Model.Article.Title</span>
-            </div>
-            <div class="col-md-9">
-                <div class="title_blogs">
-                    <h1>@Model.Article.Title</h1>
+            <div class="col-lg-9">
+                <div class="banner">
+                    <img src="@Model.Article.Image">
                 </div>
-                <div class="content_blogs">
-                    <i class="fa fa-clock-o"></i>
-                    <span>@DateTime.Now.ToString("dd/mm/yyyy")</span>
-                </div>
-                <div class="blog_post_mainn ">
+                <div class="content_detail">
                     @Html.Raw(Model.Article.Content)
+                    <div class="travel_life">
+                        <p><img src="~/Content/images/blog-detail/c1.png"></p>
+                        <p>Cambodia certified since 2015</p>
+                        <p>Vietnam certified since 2015</p>
+                        <p> Thailand certified since 2016</p>
+                        <p>Myanmar certified since 2016</p>
+                        <p>Laos certified since 2016</p>
+                        <p>Indonesia certified since 2018</p>
+                        <p>Japan certified since 2020</p>
+                    </div>
+                    <p class="title-out"><strong>OUR TEAM </strong></p>
+                    <p>With 7 dedicated sustainability coordinators, led by our Sustainability Director, Mrs Alexandra Michat, the EXO Travel team continues to drive its sustainability agenda forward in 8 destinations across Asia and is further responsible for <a href="" title="" class="link-exo">EXO Foundation‘s</a> operations.</p>
+                    <p class="flex-md-gro">
+                        <img src="~/Content/images/blog-detail/d1.png" alt="">
+                    </p>
                 </div>
-                <div class="share">
-                    <ul>
-                        <li class="share_texxt">Share:</li>
-                        <li class="facebook_">
-                            <a href="">
-                                <i class="fa fa-facebook"></i>&nbsp;facebook
-                            </a>
-                        </li>
-                        <li class="twitter_"><a href=""><i class="fa fa-twitter"></i>&nbsp;Twitter</a></li>
-                    </ul>
-                </div>
-
-                <div class="view_top">
-                    <h5 class="text-center">You might also like</h5>
-                    <div class="row blog_home">
-                        @foreach (var item in acticelhot)
-                        {
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="blog_item">
-                                    <div class="img_blog">
-                                        <a href="/@item.MenuAlias/@item.ID/@item.Alias"><img src="@item.Image"></a>
-                                    </div>
-                                    <div class="text_blog">
-                                        <a href="/@item.MenuAlias/@item.ID/@item.Alias"><h3>@item.Title</h3></a>
-                                        
-                                            <span>@DateTime.Now.ToString("dd/mm/yyyy") </span>
-                                        
-                                        <p class="text_conten">@Html.Raw(item.Description) </p>
-                                    </div>
-                                </div>
+                <div class="want-read">
+                    <p class="form-title">Want to Read More Stories?</p>
+                    <span>Join 9,000+ readers and receive exclusive stories and travel information.</span>
+                    <div class="wrap_form_join">
+                        <form action="" method="">
+                            <div class="form-gup">
+                                <label>First Name*</label>
+                                <input type="text" placeholder="Ex: John" name="">
                             </div>
-                        }
-
+                            <div class="form-gup">
+                                <label>Email*</label>
+                                <input type="text" placeholder="Ex: john@doe.com" name="">
+                            </div>
+                            <div class="form-gup">
+                                <button>JOIN OUR TRAVEL COMMUNITY</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-
-
-            </div>
-            <div class="col-md-3">
-                <div class="wrapper_border">
-                    <div class="banner">
-                        <a href=""><img src="~/Content/img/blog/ba1.jpg"></a>
+                <span class="visited">(Visited 87 times, 2 visits today)</span>
+                <div class="post-info">
+                    <div class="content_info">
+                        <a href="" title="">Leave a comment</a>
                     </div>
-                    <h3 class="top_post">Latest posts</h3>
-                    <div class="top_viewPost">
-                        @foreach (var item in acticelhot)
-                        {
-                            <div class="item_view">
-                                <a href="/@item.MenuAlias/@item.ID/@item.Alias">
+                    <div class="share_info">
+                        <div class="wrap_share">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-google-plus-g"></i></a>
+                            <a href=""><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row wrap_control">
+                    <div class="col-md-6">
+                        <div class="col-tro prev">
+                            <a href="" title="">
+                                <div class="prev-nav">Previous</div>
+                                <div class="name-nav">Corona Free Travel</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-tro next">
+                            <a href="" title="">
+                                <div class="prev-nav">Next</div>
+                                <div class="name-nav">COVID-19 Virus Updates and Travel</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="check_mail">
+                    <div class="title_check">
+                        <div class="title">Leave a Reply</div>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <textarea cols="45" rows="8" name="textarea" id="textarea"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name*</label>
+                            <input type="text" name="name" id="name" value="" tabindex="1" />
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Email*</label>
+                            <input type="text" name="name" id="name" value="" tabindex="1" />
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Website</label>
+                            <input type="text" name="name" id="name" value="" tabindex="1" />
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="checkbox" id="checkbox" />
+                            <label for="checkbox">Save my name, email, and website in this browser for the next time I comment.</label>
+                        </div>
+                        <div>
+                            <input type="submit" value="Post comment" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="wrapper_right">
+                    <div class="get_social">
+                        <h2>LET’S GET SOCIAL</h2>
+                        <div class="wrap_share">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-google-plus-g"></i></a>
+                            <a href=""><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <div class="banner_right">
+                        <h3 class="text-center">
+                            GET IN TOUCH <br>
+                            & <br>
+                            LET US DESIGN
+                        </h3>
+                        <p class="text_">
+                            The Journey <br>
+                            of a <br>
+                            Lifetime!
+                        </p>
+                        <a href="" title="" class="equire">ENQUIRE NOW</a>
+                    </div>
+                    <div class="list_post">
+                        <h2>Recent Posts</h2>
+                        <div class="wrap_item_list">
+                            @foreach(var item in acticelhot)
+                            {
+                            <div class="item_post">
+                                <a href="" title="">
                                     <img src="@item.Image">
-                                    <div class="text_view">
-                                        <h5>@item.Title</h5>
-                                        @DateTime.Now.ToString("dd/mm/yyyy")
+                                    <div class="content_post">
+                                        <h3>@item.Title</h3>
+                                        <p class="post_day">@DateTime.Now.ToLongDateString()</p>
                                     </div>
                                 </a>
                             </div>
-                        }
-                    </div>
-
-                    <h3 class="top_post">Top popular Tags</h3>
-                    <div class="tags">
-                        @foreach (var item in tabArticles)
-                        {
-                            <a href="">@item.Title</a>
-                        }
-
+                            }
+                            
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-@section scripts {
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="~/Content/js/blogs.js"></script>
-}
-
+<!-- end main -->

@@ -10,7 +10,7 @@
     string lang = Request.Cookies["LanguageID"].Value;
     List<Menu> _menuActivities = CommentController.GetMenusActivities(lang);
     List<ShowObject> listTourDeal = CommentController.TourDeal(lang);
-    List<Menu> _menuDes = CommentController.GetMenusDes(lang);
+    List<Menu> menuDes = CommentController.GetMenuDes(lang);
     List<ShowObject> tours = CommentController.Tourhots(lang);
 }
 <div class="holdingbox-1">
@@ -28,112 +28,114 @@
                 <h4 class="modal-title">Contact Us</h4>
                 <p>We're experts who take pride in tailor-made itineraries that suit any need. Please fill in the form below and a member of our team will be in touch shortly.</p>
             </div>
-            <div class="modal-body">
-                <ul class="nav nav-tabs">
-                    <li class="active">
-                        <a href="#tab1">New Travel Enquiry</a>
-                    </li>
-                </ul>
-                <div class="tab-pane active" id="tab1">
-                    <div class="tab-header">Please fill in the appropriate information below regarding any travel plans or enquiries. Our team of travel experts will get back to you shortly.</div>
-                    <div class="tab-content">
-                        <div class="row md-bot-15">
-                            <div class="col-md-4">
-                                <label class="control-label">First Name</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-md-4">
-                                <label class="control-label">Last Name</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-md-4">
-                                <label class="control-label">Email</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row md-bot-15">
-                            <div class="col-md-8">
-                                <label class="control-label">First Name</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-md-4">
-                                <label class="control-label">Last Name</label>
-                                <div class="selectSty">
-                                    <select class="from_sty selectpicker form-control">
-                                        <option value="" selected="selected">None selected</option>
-                                        <option value="">Vietnam</option>
-                                        <option value="">Thailand</option>
-                                        <option value="">Myanmar</option>
-                                        <option value="">Laos</option>
-                                        <option value="">aruco</option>
-                                        <option value="">Cambodia</option>
-                                    </select>
+            <form action="/bookcontact" method="post" >
+                <div class="modal-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#tab1">New Travel Enquiry</a>
+                        </li>
+                    </ul>
+                    <div class="tab-pane active" id="tab1">
+                        <div class="tab-header">Please fill in the appropriate information below regarding any travel plans or enquiries. Our team of travel experts will get back to you shortly.</div>
+                        <div class="tab-content">
+                            <div class="row md-bot-15">
+                                <div class="col-md-4">
+                                    <label class="control-label">First Name</label>
+                                    <input type="text" class="form-control" name="FirstName">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">Last Name</label>
+                                    <input type="text" class="form-control" name="LastName">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">Email</label>
+                                    <input type="text" class="form-control" name="Email">
                                 </div>
                             </div>
-                        </div>
-                        <div class="row md-bot-15">
-                            <div class="col-md-4">
-                                <label class="control-label">Estimated Travel Date</label>
-                                <input type="date" class="form-control">
-                            </div>
-                            <div class="col-md-4">
-                                <label class="control-label">Estimated Duration</label>
-                                <div class="selectSty">
-                                    <select class="from_sty selectpicker form-control">
-                                        <option value="" selected="selected">Choose Duration</option>
-                                        <option value="">Less than 1 week</option>
-                                        <option value="">1-2 week</option>
-                                        <option value="">3-4 week</option>
-                                        <option value="">More than 4 week</option>
-                                    </select>
+                            <div class="row md-bot-15">
+                                <div class="col-md-8">
+                                    <label class="control-label">Tel</label>
+                                    <input type="text" class="form-control" name="Tel">
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label class="control-label">Adults</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="control-label">Children</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="control-label">Infants</label>
-                                        <input type="text" class="form-control">
+                                <div class="col-md-4">
+                                    <label class="control-label">Last Name</label>
+                                    <div class="selectSty">
+                                        <select class="from_sty selectpicker form-control">
+                                            <option value="" selected="selected">None selected</option>
+                                            <option value="">Vietnam</option>
+                                            <option value="">Thailand</option>
+                                            <option value="">Myanmar</option>
+                                            <option value="">Laos</option>
+                                            <option value="">aruco</option>
+                                            <option value="">Cambodia</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row md-bot-15">
-                            <div class="col-md-12">
-                                <label class="control-label">Itinerary plans or ideas</label>
-                                <textarea class="form-control" name="itinerary_plans_or_ideas" rows="3"></textarea>
+                            <div class="row md-bot-15">
+                                <div class="col-md-4">
+                                    <label class="control-label">Estimated Travel Date</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">Estimated Duration</label>
+                                    <div class="selectSty">
+                                        <select class="from_sty selectpicker form-control">
+                                            <option value="" selected="selected">Choose Duration</option>
+                                            <option value="">Less than 1 week</option>
+                                            <option value="">1-2 week</option>
+                                            <option value="">3-4 week</option>
+                                            <option value="">More than 4 week</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="control-label">Adults</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label">Children</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label">Infants</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row md-bot-15">
-                            <div class="col-md-4">
-                                <label class="control-label">Your Contact Number</label>
-                                <input type="text" class="form-control">
+                            <div class="row md-bot-15">
+                                <div class="col-md-12">
+                                    <label class="control-label">Itinerary plans or ideas</label>
+                                    <textarea class="form-control" rows="3" name="Subject" ></textarea>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <label class="control-label">Infants</label>
-                                <div>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="subscribe_to_newsletter" value="Yes">Yes
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="subscribe_to_newsletter" value="No">No
-                                    </label>
+                            <div class="row md-bot-15">
+                                <div class="col-md-4">
+                                    <label class="control-label">Your Contact Number</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="control-label">Infants</label>
+                                    <div>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="subscribe_to_newsletter" value="Yes">Yes
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="subscribe_to_newsletter" value="No">No
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <input type="submit" name="" value="Submit">
-            </div>
+                <div class="modal-footer">
+                    <input type="submit" name="" value="Submit">
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -205,112 +207,134 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 mg-bot-20">
-                <div class="thumbnail">
-                    <a href="tour.html"><img src="~/Content/images/myanmar-agm.jpg" alt=""></a>
-                    <div class="desc">
-                        <h3>MYANMAR</h3>
-                        <p><img src="~/Content/images/flags/icon-myanmar.png" alt=""></p>
+            @foreach (var item in menuDes.Where(x => x.Level == 1).Take(1))
+            {
+                <div class="col-md-3 mg-bot-20">
+                    <div class="thumbnail">
+                        <a href="/@item.Alias"><img src="@item.Image" alt="" style="height: 224.094px"></a>
+                        <div class="desc">
+                            <h3>@item.Title</h3>
+                            <p><img src="@item.Image_icon" alt=""></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-5 mg-bot-20">
-                <div class="thumbnail">
-                    <a href="tour.html"><img src="~/Content/images/vietnam-agm.jpg" alt=""></a>
-                    <div class="desc">
-                        <h3>VIETNAM</h3>
-                        <p><img src="~/Content/images/flags/icon-vietnam.png" alt=""></p>
+            }
+            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(1).Take(1))
+            {
+                <div class="col-md-5 mg-bot-20">
+                    <div class="thumbnail">
+                        <a href="/@item.Alias"><img src="@item.Image" alt=""></a>
+                        <div class="desc">
+                            <h3>@item.Title</h3>
+                            <p><img src="@item.Image_icon" alt=""></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mg-bot-20">
-                <div class="thumbnail">
-                    <a href="tour.html"><img src="~/Content/images/thailand-agm.jpg" alt=""></a>
-                    <div class="desc">
-                        <h3>THAILAND</h3>
-                        <p><img src="~/Content/images/flags/icon-thailand.png" alt=""></p>
-                    </div>
+            }
+            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(2).Take(1))
+            {
+        <div class="col-md-4 mg-bot-20">
+            <div class="thumbnail">
+                <a href="/@item.Alias"><img src="@item.Image" alt=""></a>
+                <div class="desc">
+                    <h3>@item.Title</h3>
+                    <p><img src="@item.Image_icon" alt=""></p>
                 </div>
             </div>
+        </div>
+            }
+
         </div>
         <div class="row">
-            <div class="col-md-5 mg-bot-20">
-                <div class="thumbnail">
-                    <a href="tour.html"><img src="~/Content/images/laos-agm.jpg" alt=""></a>
-                    <div class="desc">
-                        <h3>LAOS</h3>
-                        <p><img src="~/Content/images/flags/icon-laos.png" alt=""></p>
+            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(3).Take(1))
+            {
+                <div class="col-md-5 mg-bot-20">
+                    <div class="thumbnail">
+                        <a href="/@item.Alias"><img src="@item.Image" alt="" ></a>
+                        <div class="desc">
+                            <h3>@item.Title</h3>
+                            <p><img src="@item.Image_icon" alt=""></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mg-bot-20">
-                <div class="thumbnail">
-                    <a href="tour.html"><img src="~/Content/images/indonesia-agm-02.jpg" alt=""></a>
-                    <div class="desc">
-                        <h3>INDONESIA</h3>
-                        <p><img src="~/Content/images/flags/icon-indonesia.png" alt=""></p>
+            }
+            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(4).Take(1))
+            {
+                <div class="col-md-4 mg-bot-20">
+                    <div class="thumbnail">
+                        <a href="/@item.Alias"><img src="@item.Image" alt="" style="height:360px"></a>
+                        <div class="desc">
+                            <h3>@item.Title</h3>
+                            <p><img src="@item.Image_icon" alt=""></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 mg-bot-20">
-                <div class="thumbnail">
-                    <a href="tour.html"><img src="~/Content/images/cambodia-agm.jpg" alt=""></a>
-                    <div class="desc">
-                        <h3>CAMBODIA</h3>
-                        <p><img src="~/Content/images/flags/icon-cambodia.png" alt=""></p>
+            }
+            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(5).Take(1))
+            {
+                <div class="col-md-3 mg-bot-20">
+                    <div class="thumbnail">
+                        <a href="/@item.Alias"><img src="@item.Image" alt=""></a>
+                        <div class="desc">
+                            <h3>@item.Title</h3>
+                            <p><img src="@item.Image_icon" alt=""></p>
+                        </div>
                     </div>
                 </div>
+                    }
             </div>
-        </div>
         <div class="row">
-            <div class="col-md-3 mg-bot-20">
-                <div class="thumbnail">
-                    <a href="tour.html"><img src="~/Content/images/japan-agm.jpg" alt=""></a>
-                    <div class="desc">
-                        <h3>JAPAN</h3>
-                        <p><img src="~/Content/images/flags/icon-japan.png" alt=""></p>
+            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(6).Take(1))
+            {
+                <div class="col-md-3 mg-bot-20">
+                    <div class="thumbnail">
+                        <a href="/@item.Alias"><img src="@item.Image" alt="" style="height:360px"></a>
+                        <div class="desc">
+                            <h3>@item.Title</h3>
+                            <p><img src="@item.Image_icon" alt=""></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-5 mg-bot-20">
-                <div class="thumbnail">
-                    <a href="tour.html"><img src="~/Content/images/china-agm.jpg" alt=""></a>
-                    <div class="desc">
-                        <h3>CHINA</h3>
-                        <p><img src="~/Content/images/flags/icon-china.png" alt=""></p>
+            }
+            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(7).Take(1))
+            {
+                <div class="col-md-5 mg-bot-20">
+                    <div class="thumbnail">
+                        <a href="/@item.Alias"><img src="@item.Image" alt=""></a>
+                        <div class="desc">
+                            <h3>@item.Title</h3>
+                            <p><img src="@item.Image_icon" alt=""></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mg-bot-20">
-                <div class="thumbnail">
-                    <a href="tour.html"><img src="~/Content/images/malaysia-agm.jpg" alt=""></a>
-                    <div class="desc">
-                        <h3>MALAYSIA &amp; BORNEO</h3>
-                        <p><img src="~/Content/images/flags/icon-malaysia.png" alt=""></p>
+            }
+            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(8).Take(1))
+            {
+                <div class="col-md-4 mg-bot-20">
+                    <div class="thumbnail">
+                        <a href="/@item.Alias"><img src="@item.Image" alt=""></a>
+                        <div class="desc">
+                            <h3>@item.Title</h3>
+                            <p><img src="@item.Image_icon" alt=""></p>
+                        </div>
                     </div>
                 </div>
+            }
             </div>
-        </div>
         <div class="row">
-            <div class="col-md-6 mg-bot-20">
-                <div class="thumbnail">
-                    <a href="tour.html"><img src="~/Content/images/singapore.jpg" alt=""></a>
-                    <div class="desc">
-                        <h3>MYANMAR</h3>
-                        <p><img src="~/Content/images/flags/icon-singapore.png" alt=""></p>
+            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(9).Take(2))
+            {
+                <div class="col-md-6 mg-bot-20">
+                    <div class="thumbnail">
+                        <a href="/@item.Alias"><img src="@item.Image" alt=""></a>
+                        <div class="desc">
+                            <h3>@item.Title</h3>
+                            <p><img src="@item.Image_icon" alt=""></p>
+                        </div>
                     </div>
                 </div>
+            }
             </div>
-            <div class="col-md-6 mg-bot-20">
-                <div class="thumbnail">
-                    <a href="tour.html"><img src="~/Content/images/multi-country-3.jpg" alt=""></a>
-                    <div class="desc">
-                        <h3>VIETNAM</h3>
-                        <p><img src="~/Content/images/flags/icon-multi-country.png" alt=""></p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 <section class="des-content">
@@ -374,7 +398,7 @@
                     {
                         <div class="col-md-4 mg-bot-20">
                             <div class="thumbnail">
-                                <a href="tour-detail.html"><img src="@item.Image" alt=""></a>
+                                <a href="tour-detail.html"><img src="@item.Image" alt="" style="height: 370px"></a>
                                 <div class="desc_top">
                                     <h3>@item.Title</h3>
                                     <span>Japan</span>
@@ -390,7 +414,7 @@
 
                     <div class="col-md-12">
                         <div id="addboxes-tours" class="mg-top-40 mg-bt-40 clearfix">
-                            <a href="#" class="btn-view-more">View More</a>
+                            <a href="Tour/TourAll" class="btn-view-more">View More</a>
                         </div>
                     </div>
                     <div class="col-md-12">

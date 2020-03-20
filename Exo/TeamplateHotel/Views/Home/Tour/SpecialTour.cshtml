@@ -8,6 +8,19 @@
 @{
     Menu menu = ViewBag.Menu ?? new Menu();
 }
+
+    <style>
+        .details-tour {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2; /*số dòng muốn hiện */
+            font-size: 14px; /*cỡ chữ, đơn vị px  */
+            line-height: 1.5em; /* khoảng cách giữa các dòng, đơn vị em*/
+            max-height: 36px;
+        }
+    </style>
 <div class="row clearfix">
     @foreach (var item in Model)
     {
@@ -34,13 +47,9 @@
             <div class="item-content col-md-12 line">
                 <ul class="details-tour">
                     @Html.Raw(item.Description)
-                    @*<li>Get an introduction to Tokyo</li>*@
-                    @*<li>Sip sake in Takayama</li>
-                        <li>Explore Hiroshima’s highlights</li>
-                        <li>Experience tea culture in Kyoto</li>
-                        <li>See Osaka’s mix of old and new </li>*@
                 </ul>
             </div>
+            <br />
             <div class="item-content line">
                 <div class="view-share clearfix">
                     <ul>

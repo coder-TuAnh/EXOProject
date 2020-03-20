@@ -90,3 +90,14 @@ B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.cs
 B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CopyComplete
 B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.dll
 B:\Github\Kuoni\Source\TeamplateHotel\ProjectLibrary\obj\Debug\ProjectLibrary.pdb
+B:\Github\EXOProject\Exo\ProjectLibrary\bin\Debug\ProjectLibrary.dll.config
+B:\Github\EXOProject\Exo\ProjectLibrary\bin\Debug\ProjectLibrary.dll
+B:\Github\EXOProject\Exo\ProjectLibrary\bin\Debug\ProjectLibrary.pdb
+B:\Github\EXOProject\Exo\ProjectLibrary\bin\Debug\EntityFramework.dll
+B:\Github\EXOProject\Exo\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.dll
+B:\Github\EXOProject\Exo\ProjectLibrary\bin\Debug\EntityFramework.xml
+B:\Github\EXOProject\Exo\ProjectLibrary\bin\Debug\EntityFramework.SqlServer.xml
+B:\Github\EXOProject\Exo\ProjectLibrary\obj\Debug\ProjectLibrary.csprojAssemblyReference.cache
+B:\Github\EXOProject\Exo\ProjectLibrary\obj\Debug\ProjectLibrary.csproj.CopyComplete
+B:\Github\EXOProject\Exo\ProjectLibrary\obj\Debug\ProjectLibrary.dll
+B:\Github\EXOProject\Exo\ProjectLibrary\obj\Debug\ProjectLibrary.pdb

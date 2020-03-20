@@ -102,6 +102,20 @@ namespace TeamplateHotel
                 controller = "BookingTour",
                 action = "MessageOnePay",
             });
+            //Destination
+            routes.MapRoute(
+            name: "Destinations",
+            url: "Destination/{action}/{id}",
+            defaults: new { controller = "Article", action = "ListDestination", id = UrlParameter.Optional },
+            namespaces: new[] { "TeamplateHotel.Controllers" }
+            );
+
+            routes.MapRoute(
+             name: "Tours",
+             url: "Tour/{action}/{id}",
+             defaults: new { controller = "Tour", action = "TourAll", id = UrlParameter.Optional },
+             namespaces: new[] { "TeamplateHotel.Controllers" }
+         );
 
             //Review tour
             routes.MapRoute("Review tour", "Review-tour", new
@@ -190,6 +204,15 @@ namespace TeamplateHotel
                   {
                       controller = "Home",
                       action = "ListTours",
+                  });
+            routes.MapRoute(
+              name: "TourDestination",
+              url: "tourdes",
+              defaults:
+                  new
+                  {
+                      controller = "Home",
+                      action = "ListTourDes",
                   });
 
             routes.MapRoute("Default", "{aliasMenuSub}/{idSub}/{aliasSub}", new

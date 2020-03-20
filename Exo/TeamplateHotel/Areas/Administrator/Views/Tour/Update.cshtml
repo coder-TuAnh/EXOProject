@@ -1,7 +1,9 @@
 ﻿@using TeamplateHotel.Areas.Administrator.EntityModel
+@using ProjectLibrary.Database
 @model ETour
 @{
     Layout = "~/Areas/Administrator/Views/Templates/_LayoutPage.cshtml";
+    Menu menu = ViewBag.Menu ?? new Menu();
     int flag = 0;
     int count = 0;
 }

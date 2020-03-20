@@ -1,0 +1,253 @@
+﻿@using TeamplateHotel.Controllers
+@using TeamplateHotel.Models
+@using ProjectLibrary.Database
+@{
+    ViewBag.Title = "ListDestination";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    string lang = Request.Cookies["LanguageID"].Value;
+    List<Menu> menuDes = CommentController.GetMenuDes(lang);
+}
+
+<section class="full-screen bg-tour">
+    <div class="video-main ">
+        <img src="~/Content/images/bg-tourstyles-lp.jpg" alt="">
+        <div class="title-content-discover">
+            <h1 data-effect="fadeInLeft" class="hs-line-1 animate-e nopadding">EXO Destinations..</h1>
+            <h2 class="white">where will you go?</h2>
+        </div>
+    </div>
+</section>
+<section class="des-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    <img src="~/Content/images/img-svg/icon-our-asia.svg" alt="" class="icon-our-asia">
+                </p>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2 class="hightlight-underline">our asia</h2>
+                <blockquote class="about-quote">
+                    <p>The planet's largest continent is as varied as it is vast. With otherworldly landscapes, mystic cultures, amazing cuisine, exotic beaches and friendly people, there's no place on earth with more to offer. Check out our carefully designed range of exhilarating adventures across Asia showcasing the very best of each destination.</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row tab pd-bottom-40">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs mg-bt-40">
+                    <li class="active"><a data-toggle="tab" href="#home">Destinations</a></li>
+                    <li><a data-toggle="tab" href="#menu1">View Destinations Map</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active show">
+                        <div class="row">
+                            @foreach (var item in menuDes.Where(x => x.Level == 1).Take(1))
+                            {
+                                <div class="col-md-3 mg-bot-20">
+                                    <div class="thumbnail">
+                                        <a href="tour.html"><img src="@item.Image" alt="" style="height: 224.094px"></a>
+                                        <div class="desc">
+                                            <h3>@item.Title</h3>
+                                            <p><img src="@item.Image_icon" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(1).Take(1))
+                            {
+                                <div class="col-md-5 mg-bot-20">
+                                    <div class="thumbnail">
+                                        <a href="tour.html"><img src="@item.Image" alt=""></a>
+                                        <div class="desc">
+                                            <h3>@item.Title</h3>
+                                            <p><img src="@item.Image_icon" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(2).Take(1))
+                            {
+                                <div class="col-md-4 mg-bot-20">
+                                    <div class="thumbnail">
+                                        <a href="tour.html"><img src="@item.Image" alt="" ></a>
+                                        <div class="desc">
+                                            <h3>@item.Title</h3>
+                                            <p><img src="@item.Image_icon" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                        </div>
+                        <div class="row">
+                            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(3).Take(1))
+                            {
+                                <div class="col-md-5 mg-bot-20">
+                                    <div class="thumbnail">
+                                        <a href="tour.html"><img src="@item.Image" alt=""></a>
+                                        <div class="desc">
+                                            <h3>@item.Title</h3>
+                                            <p><img src="@item.Image_icon" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(4).Take(1))
+                            {
+                                <div class="col-md-4 mg-bot-20">
+                                    <div class="thumbnail">
+                                        <a href="tour.html"><img src="@item.Image" alt="" style="height:360px"></a>
+                                        <div class="desc">
+                                            <h3>@item.Title</h3>
+                                            <p><img src="@item.Image_icon" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(5).Take(1))
+                            {
+                                <div class="col-md-3 mg-bot-20">
+                                    <div class="thumbnail">
+                                        <a href="tour.html"><img src="@item.Image" alt="" style="height:360px"></a>
+                                        <div class="desc">
+                                            <h3>@item.Title</h3>
+                                            <p><img src="@item.Image_icon" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="row">
+                            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(6).Take(1))
+                            {
+                                <div class="col-md-3 mg-bot-20">
+                                    <div class="thumbnail">
+                                        <a href="tour.html"><img src="@item.Image" alt="" style="height:360px"  ></a>
+                                        <div class="desc">
+                                            <h3>@item.Title</h3>
+                                            <p><img src="@item.Image_icon" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(7).Take(1))
+                            {
+                                <div class="col-md-5 mg-bot-20">
+                                    <div class="thumbnail">
+                                        <a href="tour.html"><img src="@item.Image" alt=""></a>
+                                        <div class="desc">
+                                            <h3>@item.Title</h3>
+                                            <p><img src="@item.Image_icon" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(8).Take(1))
+                            {
+                                <div class="col-md-4 mg-bot-20">
+                                    <div class="thumbnail">
+                                        <a href="tour.html"><img src="@item.Image" alt=""></a>
+                                        <div class="desc">
+                                            <h3>@item.Title</h3>
+                                            <p><img src="@item.Image_icon" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="row">
+                            @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(9).Take(2))
+                            {
+                                <div class="col-md-6 mg-bot-20">
+                                    <div class="thumbnail">
+                                        <a href="tour.html"><img src="@item.Image" alt=""></a>
+                                        <div class="desc">
+                                            <h3>@item.Title</h3>
+                                            <p><img src="@item.Image_icon" alt=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32344111.848402362!2d98.14384585425101!3d8.277315802283354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3233af605e720cd5%3A0x28a70f18542d1b91!2sSouth%20East%20Asia!5e0!3m2!1sen!2s!4v1573615244373!5m2!1sen!2s" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-darks">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    <img src="~/Content/images/img-svg/icon-all-social.svg" alt="" class="icon-svg">
+                </p>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2 class="hightlight-underline">our asia</h2>
+                <blockquote class="about-quote">
+                    <p>For inspiring experiences, real-time updates, the latest trends or casual conversation, explore our social networks for all things travel.</p>
+                </blockquote>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="social-links mg-bt-40">
+                    <a target="_blank" title="Facebook" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" title="Twitter" href=""><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" title="Linkedin" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a target="_blank" title="Googleplus" href=""><i class="fab fa-google-plus-g"></i></a>
+                    <a target="_blank" title="Pinterest" href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a target="_blank" title="Youtube" href=""><i class="fab fa-youtube"></i></a>
+                    <a target="_blank" title="Instagram" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="brand">
+    <div class="container">
+        <div class="row">
+            <div class="large-12 columns col-md-12">
+                <div class="destination-slider owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/1.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/2.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/3.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/4.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="destination">
+                            <a href="#" class="img-link">
+                                <img src="~/Content/images/brand/5.png" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

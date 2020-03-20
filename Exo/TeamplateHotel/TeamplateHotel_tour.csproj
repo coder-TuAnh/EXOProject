@@ -2968,6 +2968,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Shared\Banner_us.cshtml" />
     <Content Include="Views\Home\Demo.cshtml" />
+    <Content Include="Views\Home\Tour\SpecialTourDes.cshtml" />
+    <Content Include="Views\Tour\TourAll.cshtml" />
+    <Content Include="Views\Article\ListDestination.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

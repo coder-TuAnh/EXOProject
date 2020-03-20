@@ -45,6 +45,7 @@ namespace TeamplateHotel.Areas.Administrator.EntityModel
 
         public string Description { get; set; }
         public string Image { get; set; }
+        public string Image_icon { get; set; }
         public bool Showhome { get; set; }
     }
 }

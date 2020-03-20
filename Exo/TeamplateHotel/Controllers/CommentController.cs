@@ -33,7 +33,14 @@ namespace TeamplateHotel.Controllers
                 return hotel;
             }
         }
-
+        public static Menu GetMenu()
+        {
+            using (var db = new MyDbDataContext())
+            {
+                var menu = db.Menus.FirstOrDefault(x => x.Type == SystemMenuType.Tour && x.Level == 0);
+                return menu;
+            }
+        }
         //public static List<AboutUs> GetAboutUs(string languageKey) 
         //{
         //    using (var db = new MyDbDataContext()) 
@@ -57,12 +64,12 @@ namespace TeamplateHotel.Controllers
         {
             using (var db = new MyDbDataContext())
             {
-                var menus = from m in db.Menus
-                            where m.Status == true && m.Location == SystemMenuLocation.MainMenu
-                            orderby m.Index
-                            select m;
+                //var menus = from m in db.Menus
+                //            where m.Status == true && m.Location == SystemMenuLocation.MainMenu
+                //            orderby m.Index
+                //            select m;
 
-                // List<Menu> menus = db.Menus.Where(a =>a.Status==true  &&  a.Location == SystemMenuLocation.MainMenu ).OrderBy(a => a.Index).ToList();
+                List<Menu> menus = db.Menus.Where(a => a.Status == true && a.Location == SystemMenuLocation.MainMenu).OrderBy(a => a.Index).ToList();
                 return menus.ToList();
             }
         }
@@ -78,13 +85,11 @@ namespace TeamplateHotel.Controllers
             }
         }
 
-        public static List<Menu> GetMenusDes(string languageKey)
+        public static List<Menu> GetMenuDes(string languageKey)
         {
             using (var db = new MyDbDataContext())
             {
-                List<Menu> menus = db.Menus.Where(a => a.Status && a.Location == SystemMenuLocation.MainMenu
-                                                        && a.LanguageID == languageKey
-                                                        && a.Type == SystemMenuType.Tour).ToList();
+                List<Menu> menus = db.Menus.Where(a => a.Status && a.Location == SystemMenuLocation.MainMenu && a.LanguageID == languageKey && a.Type == SystemMenuType.Tour).ToList();
                 return menus;
             }
         }
@@ -613,6 +618,33 @@ namespace TeamplateHotel.Controllers
                             }).OrderBy(a => a.Index).ToList();
                 return partnerarticle;
             }
+        }
+        // all tour
+        public static List<ShowObject> TourAll(string languageKey)
+        {
+            using (var db = new MyDbDataContext())
+            {
+                var toursAll = from tour in db.Tours
+                               join menu in db.Menus on tour.MenuID equals menu.ID
+                               where tour.Status == true
+                               select new ShowObject
+                               {
+                                   ID = tour.ID,
+                                   Alias = tour.Alias,
+                                   MenuID = tour.MenuID,
+                                   MenuAlias = menu.Alias,
+                                   Title = tour.Title,
+                                   Index = tour.Index,
+                                   Image = tour.Image,
+                                   Description = tour.Description,
+                                   Price = (tour.Price == null) ? 0 : (decimal)tour.Price,
+                                   PriceSale = (tour.PriceSale == null) ? 0 : (decimal)tour.PriceSale,
+                               };
+                return toursAll.ToList();
+            }
+
+
+
         }
 
         //phòng show home
