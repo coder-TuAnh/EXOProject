@@ -33,7 +33,7 @@ namespace TeamplateHotel.Areas.Administrator.Controllers
                 {
                     a.ID,
                     a.FullName,
-                    a.NameCruise,
+                    //a.NameCruise,
                     a.Departure,
                     a.Email,
                     a.CreateDate

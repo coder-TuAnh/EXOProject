@@ -28,7 +28,7 @@
                 <h4 class="modal-title">Contact Us</h4>
                 <p>We're experts who take pride in tailor-made itineraries that suit any need. Please fill in the form below and a member of our team will be in touch shortly.</p>
             </div>
-            <form action="/bookcontact" method="post" >
+            <form action="/bookcontact" method="post">
                 <div class="modal-body">
                     <ul class="nav nav-tabs">
                         <li class="active">
@@ -109,7 +109,7 @@
                             <div class="row md-bot-15">
                                 <div class="col-md-12">
                                     <label class="control-label">Itinerary plans or ideas</label>
-                                    <textarea class="form-control" rows="3" name="Subject" ></textarea>
+                                    <textarea class="form-control" rows="3" name="Subject"></textarea>
                                 </div>
                             </div>
                             <div class="row md-bot-15">
@@ -233,15 +233,15 @@
             }
             @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(2).Take(1))
             {
-        <div class="col-md-4 mg-bot-20">
-            <div class="thumbnail">
-                <a href="/@item.Alias"><img src="@item.Image" alt=""></a>
-                <div class="desc">
-                    <h3>@item.Title</h3>
-                    <p><img src="@item.Image_icon" alt=""></p>
+                <div class="col-md-4 mg-bot-20">
+                    <div class="thumbnail">
+                        <a href="/@item.Alias"><img src="@item.Image" alt=""></a>
+                        <div class="desc">
+                            <h3>@item.Title</h3>
+                            <p><img src="@item.Image_icon" alt=""></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
             }
 
         </div>
@@ -250,7 +250,7 @@
             {
                 <div class="col-md-5 mg-bot-20">
                     <div class="thumbnail">
-                        <a href="/@item.Alias"><img src="@item.Image" alt="" ></a>
+                        <a href="/@item.Alias"><img src="@item.Image" alt=""></a>
                         <div class="desc">
                             <h3>@item.Title</h3>
                             <p><img src="@item.Image_icon" alt=""></p>
@@ -281,8 +281,8 @@
                         </div>
                     </div>
                 </div>
-                    }
-            </div>
+            }
+        </div>
         <div class="row">
             @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(6).Take(1))
             {
@@ -320,7 +320,7 @@
                     </div>
                 </div>
             }
-            </div>
+        </div>
         <div class="row">
             @foreach (var item in menuDes.Where(x => x.Level == 1).Skip(9).Take(2))
             {
@@ -334,7 +334,8 @@
                     </div>
                 </div>
             }
-            </div>
+        </div>
+
     </div>
 </section>
 <section class="des-content">
@@ -398,25 +399,16 @@
                     {
                         <div class="col-md-4 mg-bot-20">
                             <div class="thumbnail">
-                                <a href="tour-detail.html"><img src="@item.Image" alt="" style="height: 370px"></a>
+                                <a href="/@item.MenuAlias/@item.ID/@item.Alias"><img src="@item.Image" alt="" style="height: 370px"></a>
                                 <div class="desc_top">
-                                    <h3>@item.Title</h3>
-                                    <span>Japan</span>
-                                    <p><img src="~/Content/images/flags/icon-japan.png" alt=""></p>
+                                    <h3>@item.Themes</h3>
                                 </div>
                                 <div class="desc_2">
-                                    <h3> @item.Alias</h3>
+                                    <h3> @item.Title</h3>
                                 </div>
                             </div>
                         </div>
                     }
-
-
-                    <div class="col-md-12">
-                        <div id="addboxes-tours" class="mg-top-40 mg-bt-40 clearfix">
-                            <a href="Tour/TourAll" class="btn-view-more">View More</a>
-                        </div>
-                    </div>
                     <div class="col-md-12">
                         <h2 class="hightlight-underline-black text-uppercase black">Subscribe to our newsletter!</h2>
                     </div>

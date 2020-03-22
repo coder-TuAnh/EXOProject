@@ -1,167 +1,76 @@
 ﻿@using TeamplateHotel.Controllers
 @using TeamplateHotel.Models
+@using ProjectLibrary.Database
 @using PagedList.Mvc
 @using PagedList
 @model PagedList.IPagedList<TeamplateHotel.Models.ShowObject>
 
 @{
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
-
+    Menu menu = ViewBag.Menu ?? new Menu();
     string lan = Request.Cookies["LanguageID"].Value;
     var company = CommentController.DetailHotel(lan);
     List<ShowObject> _tourHot = CommentController.Tourhots(lan);
 }
-
 <section class="full-screen bg-tour">
     <div class="video-main ">
-        <img src="~/Content/images/bg-2.jpg" alt="">
+        <img src="@menu.Image" alt="@menu.Title">
+        <div class="title-content-discover">
+            <h1 data-effect="fadeInLeft" class="hs-line-1 animate-e nopadding">@menu.Title Destinations..</h1>
+            <h2 class="white">where will you go?</h2>
+        </div>
     </div>
 </section>
-
-<section class="tour-content">
+<section class="des-content">
     <div class="container">
-        <input type="hidden" id="slugguugug" value="@ViewBag.slug" />
-        <div class="row icon-between ">
-            <p>
-                <img src="~/Content/images/icon-menu/icon-search-catalogue.png" class="icon-our-asia" alt=" ">
-            </p>
-        </div>
-        <div class="row mg-bt-40">
-            @*<div class="col-lg-4 col-md-6 group-view">
-                    <div class="button-group layout-mode-button-group" id="btnContainer">
-                        <button class="btn-list-view bt-view" onclick="listView()"><i class="fas fa-list icon-view"></i>LIST VIEW</button>
-                        <button class="btn-grid-view bt-view active" onclick="gridView()"><i class="fas fa-th icon-view"></i>GRID VIEW</button>
-                    </div>
-                </div>*@
-            <div class="col-lg-5 col-md-6 groug-results">
-                <div class="found"> <span class="font-16">RESULTS FOUND:</span><span class="green">@Model.Count</span></div>
-                <div class="view">
-                    <span class="font-16">VIEW:</span>
-                    <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn">09</button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <ul>
-                                <li><a href="#">09</a></li>
-                                <li><a href="#">18</a></li>
-                                <li><a href="#">27</a></li>
-                                <li><a href="#">36</a></li>
-                                <li><a href="#">45</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <span class="font-16">PER PAGE</span>
-                </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    <img src="~/Content/images/img-svg/icon-our-asia.svg" alt="" class="icon-our-asia">
+                </p>
             </div>
-            <div class="col-lg-3 col-md-12">
-                <div class="our_Sort">
-                    <div>
-                        <span>Sort by:</span>
-                        <select onchange="OrderBy(value)">
-                            <option value="0">Default</option>
-                            <option value="1">Từ thấp đến cao</option>
-                            <option value="2">Từ cao đến thấp</option>
-                        </select>
-                    </div>
-                </div>
-                @*<div class="dropdown filter-tour">
-                        <button class="btn btn-secondary dropdown-toggle sort-by" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sort by
-                        </button>
-
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">A To Z</a>
-                            <a class="dropdown-item" href="#">Z to A</a>
-                            <a class="dropdown-item active" href="#">Most Popular</a>
-                        </div>
-                    </div>*@
+            <div class="col-md-12 text-center">
+                <h2 class="hightlight-underline">@menu.Title</h2>
+                <blockquote class="about-quote">
+                    <p>@Html.Raw(menu.Description)</p>
+                </blockquote>
             </div>
         </div>
-        <div class="row pd-bottom-40">
-            <div class="col-lg-3 col-md-12">
-                <div class="reset-op mg-bot-20">
-                    <button type="button" class="btn-round btn-reset">
-                        <i class="fas fa-times"></i>Reset options
-                    </button>
-                </div>
-                <div class="left-searchbox left-panel mg-bot-20">
-                    <div class="border-radius-top">Search Tours</div>
-                    <div class="filters-search search-box">
-                        <i class="fas fa-search"></i>
-                        <input type="text" class="search-box" placeholder="Type Tour Name" title="Search" name="seach">
+        <div class="row tab pd-bottom-40">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs mg-bt-40">
+                    <li class="active"><a data-toggle="tab" href="#home">Destinations</a></li>
+                    <li><a data-toggle="tab" href="#menu1">View Destinations Map</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active show">
+                        <div class="row mg-bot-20">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-md-4 mg-bot-20">
+                                    <div class="thumbnail">
+                                        <a href="/@item.MenuAlias/@item.ID/@item.Alias">
+                                            <img src="@item.Image" alt="@item.Title">
+                                            <div class="desc">
+                                                <h3>@item.Title</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="text-right" id="pagination">
+                            <nav>
+                                <ul class="pagination">
+                                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32344111.848402362!2d98.14384585425101!3d8.277315802283354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3233af605e720cd5%3A0x28a70f18542d1b91!2sSouth%20East%20Asia!5e0!3m2!1sen!2s!4v1573615244373!5m2!1sen!2s" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                 </div>
-                <div class="left-panel mg-bot-20">
-                    <div class="border-radius-top">style</div>
-                    <div class="filters search-box">
-                        <ul class="list-group">
-                            <li class="rfn-active-travel">
-                                <div class="roundedOne">
-                                    <label class="custom-check">
-                                        Active Travel (388)
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="left-panel mg-bot-20">
-                    <div class="border-radius-top">Responsible Benefits</div>
-                    <div class="filters search-box">
-                        <ul class="list-group">
-                            <li class="rfn-honeymoon">
-                                <div class="roundedOne">
-                                    <label class="custom-check">
-                                        Carbon Friendly (13)
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="rfn-luxury">
-                                <div class="roundedOne">
-                                    <label class="custom-check">
-                                        Cultural Interaction (49)
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="rfn-nature-wildlife">
-                                <div class="roundedOne">
-                                    <label class="custom-check">
-                                        Locals Benefit (5)
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="rfn-short-trips">
-                                <div class="roundedOne">
-                                    <label class="custom-check">
-                                        Making a Difference (18)
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="rfn-undiscovered-asia">
-                                <div class="roundedOne">
-                                    <label class="custom-check">
-                                        Social Impact (23)
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-9 col-md-12" id="showdatahotelt">
-                @Html.Action("ListTourDes", "Home", new { slug = ViewBag.slug, page = ViewBag.page })
-
             </div>
         </div>
     </div>
@@ -238,4 +147,4 @@
             </div>
         </div>
     </div>
-</section>
+</section>  

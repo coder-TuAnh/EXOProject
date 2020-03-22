@@ -149,49 +149,19 @@
                                     {
                                         <div class="card">
                                             <div class="card-header">
-                                                <a class="card-link" data-toggle="collapse" href="#menu2" aria-expanded="false" aria-controls="menu4">@item.TitleTab <span class="collapsed"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span><span class="expanded"><img src="~/Content/images/icon-menu/icon-arrow-up.png" alt=""></span></a>
+                                                <a class="card-link" data-toggle="collapse" href="#menu_@index" aria-expanded="false" aria-controls="menu4">@item.TitleTab <span class="collapsed"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span><span class="expanded"><img src="~/Content/images/icon-menu/icon-arrow-up.png" alt=""></span></a>
                                             </div>
-                                            <div id="menu2" class="collapse menu">
+                                            <div id="menu_@index" class="collapse menu">
                                                 <div class="card-body">
                                                     @Html.Raw(item.Content)
                                                 </div>
                                             </div>
                                         </div>
+                                        index++;
                                     }
 
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a class="card-link" data-toggle="collapse" href="#menu4" aria-expanded="false" aria-controls="menu4">DAY 4 - BAGAN - MANDALAY<span class="collapsed"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span><span class="expanded"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span></a>
-                                        </div>
-                                        <div id="menu4" class="collapse menu">
-                                            <div class="card-body">
-                                                <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a class="card-link" data-toggle="collapse" href="#menu5" aria-expanded="false" aria-controls="menu5">DAY 5 - MANDALAY – AMARAPURA – AVA – SAGAING - MANDALAY<span class="collapsed"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span><span class="expanded"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span></a>
-                                        </div>
-                                        <div id="menu5" class="collapse menu">
-                                            <div class="card-body">
-                                                <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a class="card-link" data-toggle="collapse" href="#menu6" aria-expanded="false" aria-controls="menu6">DAY 6 - MANDALAY – HEHO – INLE LAKE<span class="collapsed"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span><span class="expanded"><img src="~/Content/images/icon-menu/icon-arrow-down.png" alt=""></span></a>
-                                        </div>
-                                        <div id="menu6" class="collapse menu">
-                                            <div class="card-body">
-                                                <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

@@ -142,7 +142,7 @@ namespace TeamplateHotel.Controllers
                 return View("Tour/DetailTour", detailTour);
             }
             pagenumber = page ?? 1;
-            pagesize = pageSize ?? 9;
+            pagesize = pageSize ?? 12;
             ViewBag.slug = aliasMenuSub;
             List<ShowObject> listTours = CommentController.GetTours(menu.ID);
             IPagedList<ShowObject> listAll = listTours.ToPagedList(pagenumber, pagesize);
@@ -198,36 +198,36 @@ namespace TeamplateHotel.Controllers
                 return View("Tour/SpecialTour", _list);
             }
         }
-        public ActionResult ListTourDes(string slug, string item, int? page, int? pageSize)
-        {
-            using (var db = new MyDbDataContext())
-            {
-                Menu menu = db.Menus.FirstOrDefault(x => x.Alias == slug);
-                ViewBag.slug = slug;
-                ViewBag.Menu = menu;
-                int pagenumber = page ?? 1;
-                int pagesize = pageSize ?? 9;
-                List<ShowObject> _listActivities = CommentController.GetTours(menu.ID);
+        //public ActionResult ListTourDes(string slug, string item, int? page, int? pageSize)
+        //{
+        //    using (var db = new MyDbDataContext())
+        //    {
+        //        Menu menu = db.Menus.FirstOrDefault(x => x.Alias == slug);
+        //        ViewBag.slug = slug;
+        //        ViewBag.Menu = menu;
+        //        int pagenumber = page ?? 1;
+        //        int pagesize = pageSize ?? 9;
+        //        List<ShowObject> _listActivities = CommentController.GetTours(menu.ID);
 
-                switch (item)
-                {
-                    case "0":
-                        _listActivities = _listActivities.OrderBy(x => x.ID).ToList();
-                        break;
-                    case "1":
-                        _listActivities = _listActivities.OrderBy(x => x.Title).ToList();
-                        break;
-                    case "2":
-                        _listActivities = _listActivities.OrderByDescending(x => x.Title).ToList();
-                        break;
-                    default:
-                        break;
-                }
-                IPagedList<ShowObject> _list = _listActivities.ToPagedList(pagenumber, pagesize);
+        //        switch (item)
+        //        {
+        //            case "0":
+        //                _listActivities = _listActivities.OrderBy(x => x.ID).ToList();
+        //                break;
+        //            case "1":
+        //                _listActivities = _listActivities.OrderBy(x => x.Title).ToList();
+        //                break;
+        //            case "2":
+        //                _listActivities = _listActivities.OrderByDescending(x => x.Title).ToList();
+        //                break;
+        //            default:
+        //                break;
+        //        }
+        //        IPagedList<ShowObject> _list = _listActivities.ToPagedList(pagenumber, pagesize);
 
-                return View("Tour/SpecialTourDes", _list);
-            }
-        }
+        //        return View("Tour/SpecialTourDes", _list);
+        //    }
+        //}
       
 
 
